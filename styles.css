@@ -9,44 +9,46 @@ header {
     height: 10vw;
     position: relative;
     top: 10vw;
-    z-index: 98;
-} 
+    z-index: 99;
+}
 
-/* Style the navigation menu */
-.topnav {
-    overflow: hidden;
-    background-color: #333;
-    position: relative;
-}
-  
-  /* Hide the links inside the navigation menu (except for logo/home) */
-.topnav #myLinks {
+
+<<<<<<< HEAD
+.hamburger {
+    position: fixed;
+    z-index: 100;
+    top: 1rem;
+    right: 1rem;
+    padding: 4px;
+    border: black solid 1px;
+    background: white;
+    cursor: pointer;
+  }
+
+  .closeIcon {
     display: none;
-}
-  
-  /* Style navigation menu links */
-.topnav a {
-    color: white;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 5vw;
-    display: block;
-}
-  
-  /* Style the hamburger menu */
-.topnav a.icon {
-    background: black;
-    display: block;
-    position: absolute;
-    right: 0;
+  }
+
+  .menu {
+    position: fixed;
+    transform: translateY(-100%);
+    transition: transform 0.2s;
     top: 0;
-}
-  
-  /* Style the active link (or home/logo) */
-.active {
-    background-color: rgb(212, 105, 61);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background: black;
     color: white;
-}
+    list-style: none;
+    padding-top: 4rem;
+  }
+
+  .showMenu {
+    transform: translateY(0);
+  }
+=======
+>>>>>>> parent of 84f98d6 (navbarburger)
 
 #index-heroImage {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -85,13 +87,14 @@ header {
     height: 100vw;
     top: -10vw;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     padding: 5vw;
 }
 
 #portrait {
-    width: 80vw;
+    width: 50vw;
+    height: 80vw;
 }
 
 h2 {
@@ -106,4 +109,4 @@ footer {
     color: #fff;
     text-align: center;
     height: 25vw;
-} 
+}
