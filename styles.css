@@ -1,3 +1,6 @@
+
+/* gennemgående design styling */
+
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 0%;
@@ -89,8 +92,11 @@ footer {
     color: white;
 }
 
+/* index styling */
+
 #index-heroImage {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    background-image: 
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
     url(img/foredragKlaus.png);
     height: 150vw;
     background-position: center;
