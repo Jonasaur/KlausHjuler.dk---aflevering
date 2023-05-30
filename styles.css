@@ -1,4 +1,5 @@
 body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 0%;
     padding: 0%;
     background-color: rgb(39, 47, 49);
@@ -13,7 +14,8 @@ header {
 }
 
 h1 {
-    font-family: fantasy;
+    font-family: "fugaz one";
+    font-size: 7vw;
     font-weight: 100;
 }
 
@@ -31,14 +33,28 @@ footer {
     background-color: rgb(212, 105, 61);
     color: #fff;
     text-align: center;
-    height: 25vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 35vw;
+}
+
+#so-meWrapper {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.so-me {
+    text-decoration: none;
+    color: #fff;
 }
 
 /* navbar fra w3schools FIX DET SENERE!! */
 
 /* Style the navigation menu */
 .topnav {
-    font-family: fantasy;
+    font-family: "fugaz one";
     overflow: hidden;
     background-color: #333;
     position: relative;
@@ -120,7 +136,27 @@ footer {
 }
 
 #portrait {
-    width: 100vw;
+    width: 100%;
+}
+
+.collapsible {
+    background-color: rgb(66, 115, 130);
+    margin-top: 2vw;
+    width: 100%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 5vw;
+}
+
+.collapseContent {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    color: #fff;
+    background-color: rgb(66, 115, 130);
 }
 
 
