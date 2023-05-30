@@ -9,10 +9,44 @@ header {
     height: 10vw;
     position: relative;
     top: 10vw;
-    z-index: 99;
+    z-index: 98;
+} 
+
+/* Style the navigation menu */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
 }
-
-
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+    display: none;
+}
+  
+  /* Style navigation menu links */
+.topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 5vw;
+    display: block;
+}
+  
+  /* Style the hamburger menu */
+.topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+  
+  /* Style the active link (or home/logo) */
+.active {
+    background-color: rgb(212, 105, 61);
+    color: white;
+}
 
 #index-heroImage {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -51,14 +85,13 @@ header {
     height: 100vw;
     top: -10vw;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     padding: 5vw;
 }
 
 #portrait {
-    width: 50vw;
-    height: 80vw;
+    width: 80vw;
 }
 
 h2 {
@@ -73,4 +106,4 @@ footer {
     color: #fff;
     text-align: center;
     height: 25vw;
-}
+} 
