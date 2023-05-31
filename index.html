@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fugaz One">
+    <script src="https://kit.fontawesome.com/e536aa7944.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -16,8 +16,8 @@
             <a href="index.html" class="active">KLAUS HJULER</a>
             <div id="myLinks">
                 <a href="foredrag.html">FOREDRAG</a>
-                <a href="">WORKSHOPS</a>
-                <a href="">OM MIG</a>
+                <a href="workshop.html">WORKSHOPS</a>
+                <a href="om_mig.html">OM MIG</a>
             </div>
             <a href="javascript:void(0)" class="icon" onclick="menuToggle()">
                 <i class="fa fa-bars"></i>
@@ -26,14 +26,14 @@
     </header>
 
     <div id="index-heroImage">
-        <div id="index-heroText">
+        <section id="index-heroText">
             <h1>FOREDRAGSHOLDER OG UNDERVISER</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem atque facilis 
             suscipit dolores accusantium nam! Dolor animi ea quaerat exercitationem commodi 
             necessitatibus mollitia eius dolorum, tempora illo labore itaque corporis?
             </p>
             <button id="index-heroButton">BOOK NU</button>
-        </div>
+        </section>
     </div>
 
     <section class="orangeContainer">
@@ -50,45 +50,50 @@
         <h3>STUNTMAN</h3> 
         <p id="plus1">+</p>
     </button>
-    <div class="collapseContent">
+    <section class="collapseContent">
         <img src="img/Cocktail Kitten.jpg" alt="">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium asperiores 
             expedita ut error a quibusdam quos, perspiciatis, sunt odit explicabo perferendis 
             dolor nostrum veritatis. Placeat, dolorum? Autem qui corrupti nobis?
         </p>
-    </div>
+    </section>
 
     <button class="collapsible" onclick="plus2Toggle()">
         <h3>SKUESPILLER</h3> 
         <p id="plus2">+</p>
     </button>
-    <div class="collapseContent">
+    <section class="collapseContent">
         <img src="img/Cocktail Kitten.jpg" alt="">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium asperiores 
             expedita ut error a quibusdam quos, perspiciatis, sunt odit explicabo perferendis 
             dolor nostrum veritatis. Placeat, dolorum? Autem qui corrupti nobis?
         </p>
-    </div>
+    </section>
 
     <button class="collapsible" onclick="plus3Toggle()">
         <h3>INSTRUKTØR</h3> 
         <p id="plus3">+</p>
     </button>
-    <div class="collapseContent">
+    <section class="collapseContent">
         <img src="img/Cocktail Kitten.jpg" alt="">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium asperiores 
             expedita ut error a quibusdam quos, perspiciatis, sunt odit explicabo perferendis 
             dolor nostrum veritatis. Placeat, dolorum? Autem qui corrupti nobis?
         </p>
-    </div>
+    </section>
     
     <script src="script.js"></script>
 </body>
 <footer>
     <p>TAK FOR BESØGET, DU KAN OGSÅ FINDE MIG PÅ ...</p>
     <div id="so-meWrapper">
+        <a href="#"><i class="fa-brands fa-tiktok fa-2x so-me"></i></a>
         <a href="#" class="fa fa-facebook fa-2x so-me"></a>
         <a href="#" class="fa fa-instagram fa-2x so-me"></a>
+        <a href="#" class="fa fa-youtube fa-2x so-me"></a>
+        <a href="#" class="fa fa-imdb fa-2x so-me"></a>
     </div>
+    <button id="kontakt">KONTAKT</button>
+    <p>copyright Kaus Hjuler</p>
 </footer>
 </html>
