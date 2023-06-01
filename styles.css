@@ -22,7 +22,7 @@ h1 {
     font-weight: 100;
 }
 
-h2 {
+.h2slant {
     font-family: fantasy;
     font-weight: 100;
     text-align: center;
@@ -141,6 +141,10 @@ footer {
 /* BREAKPOINT CHANGES gennemgående design  */
 
 @media screen and (min-width: 768px) {
+    main {
+        margin: 0 10vw; 
+    }
+
     footer {
         clip-path:polygon(0% 100%, 100% 100%,100% 0%,0% 5%);
         -webkit-clip-path:polygon(0% 100%, 100% 100%,100% 0%,0% 5%);
@@ -159,9 +163,11 @@ footer {
 
 /* MOBILE index styling */
 
+/* container med baggrund */
+
 #index-heroImage {
     background-image: 
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
+    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
     url(img/foredragKlaus.png);
     height: 150vw;
     background-position: center;
@@ -170,6 +176,8 @@ footer {
     position: relative;
     top: -10vw;
 }
+
+/* content til containeren  */
 
 #index-heroText {
     text-align: center;
@@ -196,6 +204,8 @@ footer {
     cursor: pointer;
 }
 
+/* container med indholdet til de forskellige sider  */
+
 .orangeContainer {
     background-color: rgb(212, 105, 61);
     position: relative;
@@ -209,6 +219,8 @@ footer {
 #portrait {
     width: 100%;
 }
+
+/* css til funktionen der folder hans tidligere arbejde ud på mobilen */
 
 .collapsible {
     background-color: rgb(76, 130, 142);
@@ -234,6 +246,8 @@ footer {
 
 /* DESKTOP index styling */
 
+/* en container med trapez-form der wrapper og skærer de indsatte billeder */
+
 #skewContainer {
     width: 100%;
     height: 80vh;
@@ -245,12 +259,16 @@ footer {
     -webkit-clip-path:polygon(0% 0%, 100% 5%,100% 95%,0% 100%);
 }
 
+/* de indsatte billeder */
+
 .poster {
     background-image: url(img/Cocktail\ Kitten.jpg);
     width: 28vw;
     height: 100%;
     cursor: pointer;
 }
+
+/* indhold der ligger over billederne */
 
 .posterContent {
     background-color: rgba(0, 0, 0, 0.75);
@@ -264,6 +282,8 @@ footer {
     -webkit-transition: opacity .5s ease; 
     transition: .5s ease;
 }
+
+/* mouseover style der ændrer opaciteten */
 
 .posterContent:hover {
     opacity: 1;
@@ -285,19 +305,30 @@ footer {
         -webkit-clip-path:polygon(0% 0%, 100% 0%,100% 100%,0% 95%);
     }
 
+    .orangeContainer h3 {
+        text-align: center;
+    }
+
+    .orangeContainer p {
+        padding: 2vw;
+        font-size: 1vw;
+    }
+
     #portrait {
         width: 50vw;
     }
 
     .h2wrap {
-        width: 100%;
+        position: relative;
+        left: -50%;
+        width: 150vw;
         overflow: hidden;
     }
 
-    h2 {
+    .h2slant {
         position: relative;
-        left: -7.5%;
-        width: 110%;
+        left: -50%vw;
+        width: 150vw;
         transform: rotate(1.4deg)
     }
 
@@ -312,15 +343,8 @@ footer {
 
 /* MOBILE foredrag styling */
 
-.foredrag-btext {
-    color: #fff;
-    padding: 2em;
-}
-
 #foredrag-heroImage {
-    background-image: 
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
-    url(img/Cocktail\ Kitten.jpg);
+    transition: background-image 1.5s ease-in-out;
     height: 150vw;
     background-position: center;
     background-repeat: no-repeat;
@@ -338,21 +362,31 @@ footer {
     color: #fff;
 }
 
+/* en wrapper der sørger for at text og knap er samme størrelse og aligner rigtigt */
+
 .buttonWrap {
-    height: 3em;
+    height: 10vw;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
 }
 
+.buttonWrap a {
+    height: 100%;
+}
+
+/* tekst */
+
 .pris {
     background-color: rgb(212, 105, 61);
     width: 40vw;
     text-align: center;
-    line-height: 3em;
+    line-height: 10vw;
     color: #fff;
 }
+
+/* knap */
 
 .bookBtn {
     background-color: rgb(66, 115, 130);
@@ -367,5 +401,50 @@ footer {
     cursor: pointer;
 }
 
+@media screen and (min-width: 768px) {
+    #foredrag-heroImage {
+        height: 100vw;
+    }
+
+    .orangeContainer h2 {
+        text-align: center;
+    }
+
+    .buttonWrap {
+        height: 15vw;
+        clip-path:polygon(0% 10%, 100% 0%,100% 100%,0% 100%);
+        -webkit-clip-path:polygon(0% 10%, 100% 0%,100% 100%,0% 100%);
+    }
+
+    .bookBtn {
+        height: 15vw;
+    }
+
+    .pris {
+        height: 15vw;
+        line-height: 15vw;
+        font-size: 4vw;
+    }
+}
+
 /* MOBILE workshop styling */
 
+#workshop-heroImage {
+    /* background-image: url(img/Cocktail\ Kitten.jpg); */
+    transition: background-image 1.5s ease-in-out;
+    height: 150vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: -10vw;
+}
+
+#workshop-heroText {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}

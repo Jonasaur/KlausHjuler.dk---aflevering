@@ -54,3 +54,43 @@ function plus3Toggle() {
         plus3.innerHTML = "+"
     }
 }
+
+// funktion der skifter mellem baggrunde på foredrag
+
+let BGIndex1 = 0
+let fimages = [
+    "img/Cocktail Kitten.jpg",
+    "img/foredragKlaus.png",
+    "img/portrætKlaus.jpg"
+]
+
+function changeBG1() {
+    document.getElementById("foredrag-heroImage").style.backgroundImage = "url('" + fimages[BGIndex1] + "')"
+    BGIndex1 ++
+  
+    if (BGIndex1 >= fimages.length) {
+        BGIndex1 = 0
+    }
+}
+  
+changeBG1()
+setInterval(changeBG1, 5000)
+
+let BGIndex2 = 0
+let wimages = [
+    "img/Cocktail Kitten.jpg",
+    "img/foredragKlaus.png",
+    "img/portrætKlaus.jpg"
+]
+
+function changeBG2() {
+    document.getElementById("workshop-heroImage").style.backgroundImage = "url('" + wimages[BGIndex2] + "')"
+    BGIndex2 ++
+  
+    if (BGIndex2 >= wimages.length) {
+        BGIndex2 = 0
+    }
+}
+  
+changeBG2()
+setInterval(changeBG2, 5000)
