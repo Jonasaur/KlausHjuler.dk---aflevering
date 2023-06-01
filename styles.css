@@ -73,7 +73,8 @@ footer {
 /* navbar fra w3schools FIX DET SENERE!! */
 
 /* Style the navigation menu */
-.topnav {
+.topnavMobile {
+    display: block;
     font-family: "fugaz one";
     overflow: hidden;
     background-color: #333;
@@ -81,12 +82,12 @@ footer {
 }
 
   /* Hide the links inside the navigation menu (except for logo/home) */
-.topnav #myLinks {
+.topnavMobile #myLinks {
     display: none;
 }
 
   /* Style navigation menu links */
-.topnav a {
+.topnavMobile a {
     color: white;
     padding: 14px 16px;
     text-decoration: none;
@@ -95,7 +96,7 @@ footer {
 }
 
   /* Style the hamburger menu */
-.topnav a.icon {
+.topnavMobile a.icon {
     background: black;
     display: block;
     position: absolute;
@@ -109,12 +110,50 @@ footer {
     color: white;
 }
 
+.topnavDesk {
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.topnavDesk img {
+    position: relative;
+    top: 4vw;
+    width: 40vw;
+    margin-left: 2vw;
+}
+
+.topnavDesk nav {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 4vw;
+    font-family: "fugaz one";
+}
+
+.topnavDesk a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 2.5vw;
+}
+
+/* BREAKPOINT CHANGES gennemgående design  */
+
 @media screen and (min-width: 768px) {
     footer {
         clip-path:polygon(0% 100%, 100% 100%,100% 0%,0% 5%);
-        /* -webkit-clip-path:polygon(0% 100%, 100% 100%,100% 0%,0% 5%); */
-        height: 20vw;
+        -webkit-clip-path:polygon(0% 100%, 100% 100%,100% 0%,0% 5%);
+        height: 20em;
         padding-top: 2vw;
+    }
+
+    .topnavMobile {
+        display: none;
+    }
+
+    .topnavDesk {
+        display: flex;
     }
 }
 
@@ -235,6 +274,33 @@ footer {
 /* BREAKPOINT CHANGES index */
 
 @media screen and (min-width: 768px) {
+    #index-heroImage {
+        height: 100vw;
+    }
+
+    .orangeContainer {
+        height: fit-content;
+        flex-direction: row;
+        clip-path:polygon(0% 0%, 100% 0%,100% 100%,0% 95%);
+        -webkit-clip-path:polygon(0% 0%, 100% 0%,100% 100%,0% 95%);
+    }
+
+    #portrait {
+        width: 50vw;
+    }
+
+    .h2wrap {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    h2 {
+        position: relative;
+        left: -7.5%;
+        width: 110%;
+        transform: rotate(1.4deg)
+    }
+
     #skewContainer {
         display: flex;
     }

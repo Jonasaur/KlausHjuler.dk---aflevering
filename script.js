@@ -2,23 +2,23 @@
 // Burgermenu
 
 function menuToggle() {
-    var x = document.getElementById("myLinks");
+    let x = document.getElementById("myLinks");
     if (x.style.display === "block") {
       x.style.display = "none";
     } else {
       x.style.display = "block";
     }
-  }
+}
 
 // Collapsible
 
-var coll = document.getElementsByClassName("collapsible")
-var i
+let coll = document.getElementsByClassName("collapsible")
+let i
 
 for (i = 0; i < coll.length; i++) {
     coll[i].addEventListener("click", function() {
         this.classList.toggle("active")
-        var content = this.nextElementSibling
+        let content = this.nextElementSibling
         if (content.style.display === "block") {
             content.style.display = "none"
         } else {
@@ -27,9 +27,9 @@ for (i = 0; i < coll.length; i++) {
     })   
 }
 
-var plus1 = document.getElementById("plus1")
-var plus2 = document.getElementById("plus2")
-var plus3 = document.getElementById("plus3")
+let plus1 = document.getElementById("plus1")
+let plus2 = document.getElementById("plus2")
+let plus3 = document.getElementById("plus3")
 
 function plus1Toggle() {
     if (plus1.innerHTML === "+") {
