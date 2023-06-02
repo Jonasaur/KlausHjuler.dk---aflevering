@@ -344,6 +344,7 @@ footer {
 /* MOBILE foredrag styling */
 
 #foredrag-heroImage {
+    background-image: url(img/KlausHjuler_Foredrag.JPG);
     transition: background-image 1.5s ease-in-out;
     height: 150vw;
     background-position: center;
@@ -430,7 +431,7 @@ footer {
 /* MOBILE workshop styling */
 
 #workshop-heroImage {
-    /* background-image: url(img/Cocktail\ Kitten.jpg); */
+    background-image: url(img/Cocktail\ Kitten.jpg);
     transition: background-image 1.5s ease-in-out;
     height: 150vw;
     background-position: center;

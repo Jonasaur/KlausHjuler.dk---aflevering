@@ -72,8 +72,7 @@ function changeBG1() {
         BGIndex1 = 0
     }
 }
-  
-changeBG1()
+
 setInterval(changeBG1, 5000)
 
 let BGIndex2 = 0
@@ -91,6 +90,5 @@ function changeBG2() {
         BGIndex2 = 0
     }
 }
-  
-changeBG2()
+
 setInterval(changeBG2, 5000)
