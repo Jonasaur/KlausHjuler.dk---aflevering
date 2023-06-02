@@ -301,8 +301,8 @@ footer {
     .orangeContainer {
         height: fit-content;
         flex-direction: row;
-        clip-path:polygon(0% 0%, 100% 0%,100% 100%,0% 95%);
-        -webkit-clip-path:polygon(0% 0%, 100% 0%,100% 100%,0% 95%);
+        clip-path:polygon(0% 0%, 100% 0%,100% 90%,0% 100%);
+        -webkit-clip-path:polygon(0% 0%, 100% 0%,100% 90%,0% 100%);
     }
 
     .orangeContainer h3 {
@@ -367,6 +367,7 @@ footer {
 
 .buttonWrap {
     height: 10vw;
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -381,7 +382,7 @@ footer {
 
 .pris {
     background-color: rgb(212, 105, 61);
-    width: 40vw;
+    width: 25vw;
     text-align: center;
     line-height: 10vw;
     color: #fff;
@@ -392,9 +393,9 @@ footer {
 .bookBtn {
     background-color: rgb(66, 115, 130);
     border: none;
-    width: 40vw;
+    width: 25vw;
     height: 100%;
-    font-family: fantasy;
+    font-family: "fugaz one";
     font-weight: 100;
     font-size: 5vw;
     color: #fff;
@@ -402,19 +403,26 @@ footer {
     cursor: pointer;
 }
 
+/* BREAKPOINT Foredrags side*/
 @media screen and (min-width: 768px) {
     #foredrag-heroImage {
-        height: 100vw;
+        height: 48.1474vw;
     }
 
     .orangeContainer h2 {
         text-align: center;
+    
+    }
+
+    .orangeContainer p{
+        margin-left: 8vw;
+        margin-right: 8vw;
     }
 
     .buttonWrap {
         height: 15vw;
-        clip-path:polygon(0% 10%, 100% 0%,100% 100%,0% 100%);
-        -webkit-clip-path:polygon(0% 10%, 100% 0%,100% 100%,0% 100%);
+        clip-path:polygon(0% 20%, 100% 0%,100% 100%,0% 100%);
+        -webkit-clip-path:polygon(0% 20%, 100% 0%,100% 100%,0% 100%);
     }
 
     .bookBtn {
@@ -426,6 +434,7 @@ footer {
         line-height: 15vw;
         font-size: 4vw;
     }
+
 }
 
 /* MOBILE workshop styling */
@@ -448,4 +457,18 @@ footer {
     left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
+}
+
+
+
+
+#omMig-heroImage {
+    background-image: url(img/KlausHjuler_Foredrag.JPG);
+    transition: background-image 1.5s ease-in-out;
+    height: 150vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: -10vw;
 }
