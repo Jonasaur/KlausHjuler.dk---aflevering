@@ -92,3 +92,23 @@ function changeBG2() {
 }
 
 setInterval(changeBG2, 5000)
+
+
+/** prøver lige noget */
+
+
+let BGIndex3 = 0
+let oimages = [
+    "img/Cocktail Kitten.jpg",
+    "img/foredragKlaus.png",
+    "img/portrætKlaus.jpg"
+]
+
+function changeBG3() {
+    document.getElementById("omMig-heroImage").style.backgroundImage = "url('" + oimages[BGIndex3] + "')"
+    BGIndex3 ++
+  
+    if (BGIndex3 >= fimages.length) {
+        BGIndex3 = 0
+    }
+}
