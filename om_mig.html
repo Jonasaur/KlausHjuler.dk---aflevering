@@ -11,47 +11,58 @@
 </head>
 <body>
     <header> 
-        <div class="topnavMobile">
-            <a href="index.html" class="active">KLAUS HJULER</a>
-            <div id="myLinks">
-                <a href="foredrag.html">FOREDRAG</a>
-                <a href="workshop.html">WORKSHOPS</a>
-                <a href="om_mig.html">OM MIG</a>
-            </div>
+        <section class="topnavMobile">
+            <a href="index.html" class="active">
+                <h2>KLAUS HJULER</h2>
+            </a>
+            <nav id="myLinks">
+                <a href="foredrag.html">
+                    <h2>FOREDRAG</h2>
+                </a>
+                <a href="workshop.html">
+                    <h2>WORKSHOPS</h2>
+                </a>
+                <a href="om_mig.html">
+                    <h2>MIN HISTORIE</h2>
+                </a>
+            </nav>
             <a href="javascript:void(0)" class="icon" onclick="menuToggle()">
                 <i class="fa fa-bars"></i>
             </a>
-        </div>
-        <div class="topnavDesk">
+        </section>
+        
+        <section class="topnavDesk">
             <a href="index.html"><img src="img/logo_test.png" alt=""></a>
             <nav>
-                <a href="foredrag.html">FOREDRAG</a>
-                <a href="workshop.html">WORKSHOPS</a>
-                <a href="om_mig.html">MIN HISTORIE</a>
+                <a href="foredrag.html"><h2 class="hoverEffect">FOREDRAG</h2></a>
+                <a href="workshop.html"><h2 class="hoverEffect">WORKSHOPS</h2></a>
+                <a href="om_mig.html"><h2 class="hoverEffect">MIN HISTORIE</h2></a>
             </nav>
-        </div>
+        </section>
     </header>
 
-    <div id="omMig-heroImage" onload="changeBG3()">
-        <section id="foredrag-heroText">
-            <h1>OM MIG</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem atque facilis 
-            suscipit dolores accusantium nam! Dolor animi ea quaerat exercitationem commodi 
-            necessitatibus mollitia eius dolorum, tempora illo labore itaque corporis?
-            </p>
+    <main>
+        <div id="omMig-heroImage" onload="changeBG3()">
+            <section id="foredrag-heroText">
+                <h1>OM MIG</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem atque facilis 
+                suscipit dolores accusantium nam! Dolor animi ea quaerat exercitationem commodi 
+                necessitatibus mollitia eius dolorum, tempora illo labore itaque corporis?
+                </p>
+            </section>
+        </div>
+    
+        <section class="orangeContainer">
+            <h2>EN DRENGEDRØM</h2>
+            <section>
+                <h3>HVEM ER JEG?</h3>
+                <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique alias, 
+                    repudiandae earum eveniet quas perferendis sit. Sed distinctio non veniam 
+                    tenetur fugiat, possimus qui voluptatem reprehenderit. Eligendi sequi aperiam ab! 
+                </p>
+            </section>
         </section>
-    </div>
-
-    <section class="orangeContainer">
-        <h2>EN DRENGEDRØM</h2>
-        <section>
-            <h3>HVEM ER JEG?</h3>
-            <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique alias, 
-                repudiandae earum eveniet quas perferendis sit. Sed distinctio non veniam 
-                tenetur fugiat, possimus qui voluptatem reprehenderit. Eligendi sequi aperiam ab! 
-            </p>
-        </section>
-    </section>
+    </main>
 
     <script src="script.js" defer></script>
 </body>
