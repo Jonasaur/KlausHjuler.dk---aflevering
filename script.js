@@ -112,3 +112,5 @@ function changeBG3() {
         BGIndex3 = 0
     }
 }
+
+setInterval(changeBG3, 5000)
