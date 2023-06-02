@@ -141,6 +141,10 @@ footer {
 /* BREAKPOINT CHANGES gennemgående design  */
 
 @media screen and (min-width: 768px) {
+    h1 {
+        font-size: 3.6992vw;
+    }
+    
     main {
         margin: 0 10vw; 
     }
@@ -154,6 +158,11 @@ footer {
 
     .topnavMobile {
         display: none;
+    }
+
+    header {
+        height: 6.1846vw;
+        top: 6.4736vw;
     }
 
     .topnavDesk {
@@ -206,18 +215,46 @@ footer {
 
 /* container med indholdet til de forskellige sider  */
 
-.orangeContainer {
+#index-orangeContainer {
     background-color: rgb(212, 105, 61);
     position: relative;
-    height: 100vw;
+    height: fit-content;
     top: -10vw;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+}
+
+#index-orangeContainer h3 {
+    text-align: center;
+    color: #fff;
+}
+
+#index-orangeContainer p {
+    padding: 3vw;
+    font-size: 4.444vw;
+    text-align: justify;
+    color: #fff;
 }
 
 #portrait {
     width: 100%;
+}
+
+.læsMere {
+    width: 100%;
+}
+
+.læsMere button {
+    background-color: #4c828e;
+    border: none;
+    outline: none;
+    width: 50%;
+    height: 4vw;
+    color: #fff;
+    font-size: 2vw;
+    cursor: pointer;
 }
 
 /* css til funktionen der folder hans tidligere arbejde ud på mobilen */
@@ -298,37 +335,39 @@ footer {
         height: 100vw;
     }
 
-    .orangeContainer {
+    #index-heroText {
+        position: relative;
+        top: 26.4724vw;
+    }
+
+    #index-orangeContainer {
+        width: 80vw;
         height: fit-content;
         flex-direction: row;
         clip-path:polygon(0% 0%, 100% 0%,100% 100%,0% 95%);
         -webkit-clip-path:polygon(0% 0%, 100% 0%,100% 100%,0% 95%);
     }
 
-    .orangeContainer h3 {
-        text-align: center;
-    }
-
-    .orangeContainer p {
+    #index-orangeContainer p {
         padding: 2vw;
         font-size: 1vw;
     }
 
     #portrait {
-        width: 50vw;
+        width: 50%;
     }
 
     .h2wrap {
         position: relative;
-        left: -50%;
-        width: 150vw;
+        left: -10vw;
+        width: 100vw;
         overflow: hidden;
     }
 
     .h2slant {
         position: relative;
-        left: -50%vw;
-        width: 150vw;
+        left: -18%;
+        width: 125vw;
         transform: rotate(1.4deg)
     }
 
@@ -361,6 +400,16 @@ footer {
     left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
+}
+
+.orangeContainer {
+    background-color: rgb(212, 105, 61);
+    position: relative;
+    height: 100vw;
+    top: -10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* en wrapper der sørger for at text og knap er samme størrelse og aligner rigtigt */
@@ -404,7 +453,12 @@ footer {
 
 @media screen and (min-width: 768px) {
     #foredrag-heroImage {
-        height: 100vw;
+        height: 42vw;
+    }
+
+    #foredrag-heroText {
+        position: relative;
+        top: 26.4724vw;
     }
 
     .orangeContainer h2 {
@@ -448,4 +502,17 @@ footer {
     left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
+}
+
+/* BREAKPOINT CHANGES workshop */
+
+@media screen and (min-width: 768px) {
+    #workshop-heroImage {
+        height: 48.1474vw;
+    }
+
+    #workshop-heroText {
+        position: relative;
+        top: 26.4724vw;
+    }
 }
