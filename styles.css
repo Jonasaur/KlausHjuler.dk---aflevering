@@ -26,7 +26,7 @@ h1 {
 }
 
 .h2slant {
-    font-family: fantasy;
+    font-family: "fugaz one";
     font-weight: 100;
     text-align: center;
     color: #fff;
@@ -258,7 +258,7 @@ footer {
 #index-heroImage {
     background-image: 
     linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
-    url(img/KlausHjuler_Foredrag.JPG);
+    url(img/KHindex_web.webp);
     height: 150vw;
     background-position: center;
     background-repeat: no-repeat;
@@ -421,7 +421,7 @@ footer {
     font-size: 2vw;
     text-align: center;
     line-height: 100%;
-    -webkit-text-stroke: 0.02vw black;
+    -webkit-text-stroke: 0.01vw black;
 }
 
 /* indhold der ligger over billederne */
@@ -491,8 +491,9 @@ footer {
     }
 
     #portrait {
+        background-image: linear-gradient(rgba(0,0,0,0) rgba(0,0,0, 0.9));
         width: 50%;
-        height: 35vw;
+        height: auto;
     }
 
     .h2wrap {
@@ -506,6 +507,7 @@ footer {
         position: relative;
         left: -18%;
         width: 125vw;
+        font-family: "fugaz one";
         transform: rotate(1.5deg)
     }
 
@@ -521,7 +523,7 @@ footer {
 /* MOBILE foredrag styling */
 
 #foredrag-heroImage {
-    background-image: url(img/KlausHjuler_Foredrag.JPG);
+    background-image: url(img/KHforedrag_web.webp);
     transition: background-image 1.5s ease-in-out;
     height: 150vw;
     background-position: center;
@@ -645,7 +647,7 @@ footer {
 /* MOBILE workshop styling */
 
 #workshop-heroImage {
-    background-image: url(img/Cocktail\ Kitten.jpg);
+    background-image: url(img/KHworkshop1_web.webp);
     transition: background-image 1.5s ease-in-out;
     height: 150vw;
     background-position: center;
@@ -680,7 +682,7 @@ footer {
 /* MOBILE om mig styling */
 
 #omMig-heroImage {
-    background-image: url(img/KlausHjuler_Foredrag.JPG);
+    background-image: url(img/KHommig1_web.webp);
     transition: background-image 1.5s ease-in-out;
     height: 150vw;
     background-position: center;
