@@ -55,6 +55,41 @@ function plus3Toggle() {
     }
 }
 
+
+/** collapsible 2 til min historie side*/
+
+let coll2 = document.getElementsByClassName("collapsible2")
+let i2
+
+for (i2 = 0; i2 < coll2.length; i++) {
+    coll2[i].addEventListener("click", function() {
+        this.classList.toggle("active")
+        let content = this.nextElementSibling
+        if (content.style.display === "block") {
+            content.style.display = "none"
+        } else {
+            content.style.display = "block"
+        }
+    })   
+}
+
+
+function plus4Toggle() {
+    if (plus3.innerHTML === "+") {
+        plus3.innerHTML = "-"
+    } else {
+        plus3.innerHTML = "+"
+    }
+}
+
+function plus5Toggle() {
+    if (plus3.innerHTML === "+") {
+        plus3.innerHTML = "-"
+    } else {
+        plus3.innerHTML = "+"
+    }
+}
+
 // funktion der skifter mellem baggrunde på foredrag
 
 // let BGIndex1 = 0
