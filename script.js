@@ -82,7 +82,7 @@ let wimages = [
 ]
 
 function changeBG2() {
-    document.getElementById("workshop-heroImage").style.backgroundImage = "url('" + wimages[BGIndex2] + "')"
+    document.getElementById("workshop-heroImage").style.backgroundImage = "url(" + wimages[BGIndex2] + ")"
     BGIndex2 ++
   
     if (BGIndex2 >= wimages.length) {
@@ -103,7 +103,7 @@ let oimages = [
 ]
 
 function changeBG3() {
-    document.getElementById("omMig-heroImage").style.backgroundImage = "url('" + oimages[BGIndex3] + "')"
+    document.getElementById("omMig-heroImage").style.backgroundImage = "url(" + oimages[BGIndex3] + ")"
     BGIndex3 ++
   
     if (BGIndex3 >= oimages.length) {
