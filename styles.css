@@ -552,7 +552,7 @@ footer {
     align-items: center;
     color: #fff;
     text-align: justify;
-    padding: 2vw 2vw;
+    padding: 4vw 2vw;
 }
 
 .orangeContainer h2 {
@@ -608,7 +608,7 @@ footer {
     cursor: pointer;
 }
 
-/* BREAKPOINT Foredrags side*/
+/* BREAKPOINT Foredrags side og gennemgående styling af orangeContainer til workshop og min historie side*/
 @media screen and (min-width: 768px) {
     #foredrag-heroImage {
         height: 48.1474vw;
@@ -626,6 +626,7 @@ footer {
 
     .orangeContainer h2 {
         text-align: center;
+        font-family: "fugaz one";
     
     }
 
