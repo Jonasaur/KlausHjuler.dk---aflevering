@@ -57,12 +57,12 @@ function plus3Toggle() {
 
 // funktion der skifter mellem baggrunde på foredrag
 
-let BGIndex1 = 0
-let fimages = [
-    "img/Cocktail Kitten.jpg",
-    "img/foredragKlaus.png",
-    "img/portrætKlaus.jpg"
-]
+// let BGIndex1 = 0
+// let fimages = [
+//     "img/Cocktail Kitten.jpg",
+//     "img/foredragKlaus.png",
+//     "img/portrætKlaus.jpg"
+// ]
 
 // function changeBG1() {
 //     document.getElementById("foredrag-heroImage").style.backgroundImage = "url('" + fimages[BGIndex1] + "')"
