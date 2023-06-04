@@ -77,9 +77,8 @@ function plus3Toggle() {
 
 let BGIndex2 = 0
 let wimages = [
-    "img/Cocktail Kitten.jpg",
-    "img/foredragKlaus.png",
-    "img/portrætKlaus.jpg"
+    "img/KHworkshop2_web.webp",
+    "img/KHworkshop1_web.webp"
 ]
 
 function changeBG2() {
@@ -99,9 +98,8 @@ setInterval(changeBG2, 5000)
 
 let BGIndex3 = 0
 let oimages = [
-    "img/Cocktail Kitten.jpg",
-    "img/foredragKlaus.png",
-    "img/portrætKlaus.jpg"
+    "img/KHommig2_web.webp",
+    "img/KHommig1_web.webp"
 ]
 
 function changeBG3() {
