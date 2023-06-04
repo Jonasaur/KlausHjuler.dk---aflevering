@@ -151,6 +151,7 @@ footer {
 .topnavDesk h2 {
     font-size: 2.5vw;
     font-weight: 100;
+    line-height: 120%;
 }
 
 .hoverEffect {
@@ -453,6 +454,7 @@ footer {
     font-family: "fugaz one";
     font-size: 2vw;
     text-align: center;
+    vertical-align: middle;
     line-height: 100%;
     -webkit-text-stroke: 0.01vw black;
 }
@@ -474,10 +476,6 @@ footer {
     transition: .5s ease;
 }
 
-.posterContent h2 {
-    font-size: 2vw;
-}
-
 /* mouseover style der ændrer opaciteten */
 
 .posterContent:hover {
@@ -489,6 +487,10 @@ footer {
 /* BREAKPOINT CHANGES index */
 
 @media screen and (min-width: 768px) {
+    h1 {
+        font-size: 3.2vw;
+    }
+    
     #index-heroImage {
         height: 42vw;
     }
@@ -500,9 +502,14 @@ footer {
         height: 80%;
     }
 
+    #index-heroText p {
+        font-size: 1.2vw;
+    }
+
     #index-heroButton {
         width: 20vw;
         height: 5vw;
+        margin: 5vw 0;
     }
 
     #index-orangeContainer {
@@ -604,7 +611,7 @@ footer {
     color: #fff;
 }
 
-#foredrag-heroText p{
+#foredrag-heroText p {
 font-size: 3.5vw;
 }
 
@@ -755,7 +762,7 @@ font-size: 3.5vw;
     color: #fff;
 }
 
-#workshop-heroText p{
+#workshop-heroText p {
     font-size: 3.5vw;
     }
 
