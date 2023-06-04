@@ -604,6 +604,10 @@ footer {
     color: #fff;
 }
 
+#foredrag-heroText p{
+font-size: 3.5vw;
+}
+
 .orangeContainer {
     background-color: rgb(212, 105, 61);
     position: relative;
@@ -624,8 +628,9 @@ footer {
 }
 
 .orangeContainer p {
-    margin-left: 8vw;
-    margin-right: 8vw;
+    margin-left: 9vw;
+    margin-right: 9vw;
+    font-size: 2.75vw;
 }
 
 
@@ -683,6 +688,10 @@ footer {
         position: relative;
         top: 26.4724vw;
     }
+
+    #foredrag-heroText p{
+        font-size: 1.5vw;
+        }
 
     .orangeContainer {
         clip-path:polygon(0% 0%, 100% 0%,100% 88%,0% 100%);
@@ -746,6 +755,10 @@ footer {
     color: #fff;
 }
 
+#workshop-heroText p{
+    font-size: 3.5vw;
+    }
+
 /* BREAKPOINT CHANGES workshop */
 
 @media screen and (min-width: 768px) {
@@ -758,6 +771,10 @@ footer {
         position: relative;
         top: 26.4724vw;
     }
+
+    #workshop-heroText p{
+        font-size: 1.5vw;
+        }
 }
 
 /* MOBILE om mig styling */
@@ -773,6 +790,49 @@ footer {
     top: -10vw;
 }
 
+/*CONTENT OVER KLAUS TIDLIGGERE KUNDER */
+
+.collapsible2{
+    background-color: rgb(76, 130, 142);
+    margin-top: 2vw;
+    width: 100%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    font-family: "fugaz one";
+    font-size: 3vw;
+    padding: 0 1em 0 1em;
+}
+
+.collapseContent2 {
+    padding: 2vw 2vw;
+    display: none;
+    justify-content: space-evenly;
+    flex-direction: column;
+    column-gap: 1vw;
+    color: #fff;
+    background-color: rgb(66, 115, 130);
+
+}
+
+table{
+    border-collapse: separate;
+    border-spacing: 1vw;
+    width: 100%;
+    justify-self: center;
+    text-align: center;
+    table-layout: fixed;
+}
+
+td {
+  width: 33%;
+}
+
+
+
+
 /* BREAKPOINT CHANGES om mig */
 
 @media screen and (min-width: 768px) {
@@ -780,5 +840,8 @@ footer {
         height: 42vw;
         top: 0;
     }
-}
 
+    .collapsible2{
+        font-size: 1.5vw;
+    }
+}
