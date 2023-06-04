@@ -564,14 +564,26 @@ footer {
     background-color: rgb(212, 105, 61);
     position: relative;
     height: fit-content;
-    top: -10vw;
+    top: -20vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     color: #fff;
     text-align: justify;
-    padding: 5vw 2vw;
+    padding: 4vw 2vw;
 }
+
+.orangeContainer h2 {
+    text-align: center;
+    margin-top: -1vw;
+
+}
+
+.orangeContainer p {
+    margin-left: 8vw;
+    margin-right: 8vw;
+}
+
 
 /* en wrapper der sørger for at text og knap er samme størrelse og aligner rigtigt */
 
@@ -596,6 +608,7 @@ footer {
     text-align: center;
     line-height: 10vw;
     color: #fff;
+    font-family: "fugaz one";
 }
 
 /* knap */
@@ -607,13 +620,13 @@ footer {
     height: 100%;
     font-family: "fugaz one";
     font-weight: 100;
-    font-size: 5vw;
+    font-size: 3vw;
     color: #fff;
     text-align: center;
     cursor: pointer;
 }
 
-/* BREAKPOINT Foredrags side*/
+/* BREAKPOINT Foredrags side og gennemgående styling af orangeContainer til workshop og min historie side*/
 @media screen and (min-width: 768px) {
     #foredrag-heroImage {
         height: 48.1474vw;
@@ -625,33 +638,35 @@ footer {
     }
 
     .orangeContainer {
-        clip-path:polygon(0% 0%, 100% 0%,100% 95%,0% 100%);
-        -webkit-clip-path:polygon(0% 0%, 100% 0%,100% 95%,0% 100%);
+        clip-path:polygon(0% 0%, 100% 0%,100% 88%,0% 100%);
+        -webkit-clip-path:polygon(0% 0%, 100% 0%,100% 88%,0% 100%);
     }
 
     .orangeContainer h2 {
         text-align: center;
+        font-family: "fugaz one";
     
     }
 
     .orangeContainer p {
-        margin-left: 8vw;
-        margin-right: 8vw;
-        font-size: 1.8496vw;
+        column-count: 2;
+        column-gap: 2vw;
+        font-size: 1vw;
     }
 
     .buttonWrap {
         position: relative;
-        top: -7vw;
-        height: 15vw;
-        clip-path:polygon(0% 20%, 100% 0%,100% 100%,0% 100%);
-        -webkit-clip-path:polygon(0% 20%, 100% 0%,100% 100%,0% 100%);
+        top: -20vw;
+        height: 10vw;
+        clip-path:polygon(0% 25%, 100% 0%,100% 100%,0% 100%);
+        -webkit-clip-path:polygon(0% 25%, 100% 0%,100% 100%,0% 100%);
     }
 
     .bookBtn {
         width: 25vw;
-        height: 15vw;
+        height: 10vw;
     }
+
 
     .pris {
         width: 25vw;

@@ -93,7 +93,7 @@ function changeBG2() {
 setInterval(changeBG2, 5000)
 
 
-/** prøver lige noget */
+/** Om mig side - script til billeder */
 
 
 let BGIndex3 = 0
