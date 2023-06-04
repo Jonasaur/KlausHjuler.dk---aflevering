@@ -106,7 +106,7 @@ function changeBG3() {
     document.getElementById("omMig-heroImage").style.backgroundImage = "url('" + oimages[BGIndex3] + "')"
     BGIndex3 ++
   
-    if (BGIndex3 >= fimages.length) {
+    if (BGIndex3 >= oimages.length) {
         BGIndex3 = 0
     }
 }
