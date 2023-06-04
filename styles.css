@@ -6,7 +6,7 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 0%;
     padding: 0%;
-    background-color: rgb(39, 47, 49);
+    background-color: rgb(17, 25, 38);
     overflow-x: hidden;
 }
 
@@ -137,10 +137,11 @@ footer {
 }
 
 .topnavDesk nav {
-    width: 50%;
+    position: relative;
+    right: 9vw;
+    width: 55%;
     display: flex;
     justify-content: space-between;
-    padding-right: 4vw;
     font-family: "fugaz one";
 }
 
@@ -395,18 +396,18 @@ footer {
 }
 
 #BG1 {
-    background-image: url(img/BG1_stuntman.webp);
+    background-image: url(img/BG1_stuntman_web.webp);
     background-size: cover;
 }
 
 #BG2 {
-    background-image: url(img/BG2_skuespiller.webp);
+    background-image: url(img/BG2_skuespiller_web.webp);
     background-size: cover;
-    background-position-x: 70%;
+    background-position-x: 40%;
 }
 
 #BG3 {
-    background-image: url(img/BG3_instruktør.webp);
+    background-image: url(img/BG3_instruktør_web.webp);
     background-size: cover;
     background-position-x: 70%;
 }
