@@ -158,6 +158,7 @@ footer {
     display: inline-block;
     position: relative;
     color: #fff;
+    font-family: "fugaz one";
 }
 
 .hoverEffect:after {
@@ -917,6 +918,53 @@ font-size: 3.5vw;
     background-size: cover;
     position: relative;
 }
+
+
+.tabelListe1{
+    background-color: #4c828e;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.tabelListe1 table{
+    padding: 0vw 3vw 1vw;
+    border-collapse: separate;
+    border-spacing: 1vw;
+    width: 100%;
+    justify-self: center;
+    text-align: center;
+    table-layout: fixed;
+}
+
+.tabelListe1 th{
+    text-decoration: underline;
+}
+
+.tabelelement {
+    align-items: center;
+    text-align: center;
+}
+
+.tabelelement h4{
+    font-family: "fugaz one";
+    font-size: 5vw;
+
+}
+
+/*STUNTMAN UNDERSIDE DESKTOP*/
+
+@media screen and (min-width: 768px) {
+ 
+    .tabelelement h4{
+        font-size: 3vw;
+    
+    }
+
+}
+
 
 
 /*SKUESPILLER UNDERSIDE */
