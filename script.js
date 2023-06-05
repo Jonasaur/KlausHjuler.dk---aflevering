@@ -57,12 +57,12 @@ function plus3Toggle() {
 
 // funktion der skifter mellem baggrunde på foredrag
 
-let BGIndex1 = 0
-let fimages = [
-    "img/Cocktail Kitten.jpg",
-    "img/foredragKlaus.png",
-    "img/portrætKlaus.jpg"
-]
+// let BGIndex1 = 0
+// let fimages = [
+//     "img/Cocktail Kitten.jpg",
+//     "img/foredragKlaus.png",
+//     "img/portrætKlaus.jpg"
+// ]
 
 // function changeBG1() {
 //     document.getElementById("foredrag-heroImage").style.backgroundImage = "url('" + fimages[BGIndex1] + "')"
@@ -93,7 +93,7 @@ function changeBG2() {
 setInterval(changeBG2, 5000)
 
 
-/** prøver lige noget */
+/** Om mig side - script til billeder */
 
 
 let BGIndex3 = 0
@@ -106,7 +106,7 @@ function changeBG3() {
     document.getElementById("omMig-heroImage").style.backgroundImage = "url('" + oimages[BGIndex3] + "')"
     BGIndex3 ++
   
-    if (BGIndex3 >= fimages.length) {
+    if (BGIndex3 >= oimages.length) {
         BGIndex3 = 0
     }
 }
