@@ -832,7 +832,6 @@ font-size: 3.5vw;
     .buttonWrap {
         position: relative;
         height: 10vw;
-        margin-bottom: 5vw;
         display: flex;
         justify-content: space-evenly;
         clip-path:polygon(0% 0%, 100% 0%,100% 100%,0% 100%);
@@ -911,14 +910,6 @@ font-size: 3.5vw;
     top: -10vw;
 }
 
-.om-h2slant {
-    text-align: center;
-    color: #fff;
-    background-color: rgb(213, 105, 63);
-    padding: 5vw;
-    margin: 5vw 0 5vw;
-}
-
 /*CONTENT OVER KLAUS TIDLIGGERE KUNDER */
 
 .collapsible2{
@@ -992,16 +983,6 @@ font-size: 3.5vw;
         background-position-y: -10%;
         height: 42vw;
         top: 0;
-    }
-
-    .om-h2slant {
-        position: relative;
-        left: -18%;
-        width: 125vw;
-        font-family: "fugaz one";
-        padding: 3vw;
-        transform: rotate(-1.7deg);
-        margin-bottom: 0;
     }
 
     .collapsible2 {
@@ -1263,8 +1244,7 @@ font-size: 3.5vw;
 #vektorklaus-img {
     position: relative;
     top: 8vw;
-    left: 8vw;
-    width: 30vw;
+    width: 25vw;
     height: auto;
     margin: 3%;
 }
