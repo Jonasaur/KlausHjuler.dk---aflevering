@@ -4,13 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Klaus Hjuler - Kontakt mig</title>
+    <meta name="Klaus Hjuler - foredragsholder, underviser, stuntman og -koordinator, skuespiller og filminstruktør" content="Foredrag, workshop, undervisning, læring, inspiration, action, aktivitet, ">
+    
+    <!--Link til Stylesheet-->
     <link rel="stylesheet" href="styles.css">
+
+    <!--Link til Google Font-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fugaz One">
+
+    <!--Link der gør det muligt at hente ikoner fra Font Awesome -->
     <script src="https://kit.fontawesome.com/e536aa7944.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header> 
+        
+        <!--Nav bar til mobil version -->
         <section class="topnavMobile">
             <a href="index.html" class="active">
                 <h2>KLAUS HJULER</h2>
@@ -26,11 +35,14 @@
                     <h2>MIN HISTORIE</h2>
                 </a>
             </nav>
+            
+            <!--Burger menu - Javascript element-->
             <a href="javascript:void(0)" class="icon" onclick="menuToggle()">
                 <i class="fa fa-bars"></i>
             </a>
         </section>
         
+        <!--Nav bar til desktop-->
         <section class="topnavDesk">
             <a href="index.html"><img src="img/logo_test.png" alt=""></a>
             <nav>
@@ -41,26 +53,49 @@
         </section>
     </header>
 
+    <!--Main section - alt andet end header og footer. Sidens indhold, der varierer fra side til side.-->
     <main>
         <section class="orangeContainer">
 
         </section>
     </main>
 
-    <script src="script.js"></script>
-</body>
-<footer>
-    <p>TAK FOR BESØGET - DU KAN FINDE MEGET MERE PÅ...</p>
-    <section id="so-meWrapper">
-        <a href="#" class="fa-brands fa-tiktok fa-2x so-me shadow"></a>
-        <a href="https://www.facebook.com/Stunts.dk" class="fa fa-facebook fa-2x so-me shadow"></a>
-        <a href="https://www.instagram.com/klauswheeler" class="fa fa-instagram fa-2x so-me shadow"></a>
-        <a href="#" class="fa fa-youtube fa-2x so-me shadow"></a>
-        <a href="https://www.imdb.com/name/nm0387136/" class="fa fa-imdb fa-2x so-me shadow"></a>
-    </section>
+     <!--Footer med links til SoMe og kontakt-siden-->
+    <footer>
+        <p>TAK FOR BESØGET - DU KAN FINDE MEGET MERE PÅ...</p>
+        
+        <section id="so-meWrapper">
+            <a class="hoverEffectMini" href="#">
+                <i class="fa-brands fa-tiktok fa-2x so-me"></i>
+            </a>
+            
+            <a class="hoverEffectMini" href="https://www.facebook.com/Stunts.dk" target="_blank"> 
+                <i class="fa fa-facebook fa-2x so-me"></i>
+            </a>
+           
+            <a class="hoverEffectMini" href="https://www.instagram.com/klauswheeler" target="_blank">
+                <i class="fa fa-instagram fa-2x so-me"></i>
+            </a>
+            
+            <a class="hoverEffectMini" href="#" target="_blank">
+                <i class="fa fa-youtube fa-2x so-me"></i>
+            </a>
+            
+            <a class="hoverEffectMini" href="https://www.imdb.com/name/nm0387136/" target="_blank">
+                <i class="fa fa-imdb fa-2x so-me shadow"></i>
+            </a>
+        </section>
+        
+        <!--Link til kontakt-siden-->
         <button id="kontakt" class="shadow">
             <a href="kontakt.html"><span class="hoverEffectMini">KONTAKT</span></a>
         </button>
-    <p>Copyright © 2023, Klaus Hjuler</p>
-</footer>
+        
+        <!--For at vise at Klaus Hjuler ejer indholdet på siden.-->
+        <p>Copyright © 2023, Klaus Hjuler</p>
+    </footer>
+
+    <!--Link til javascript document-->
+    <script src="script.js"></script>
+</body>
 </html>
