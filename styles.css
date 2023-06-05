@@ -813,7 +813,7 @@ font-size: 3.5vw;
 
     .orangeContainer {
         top: 0;
-        clip-path:polygon(0% 0%, 100% 0%,100% 88%,0% 100%);
+        clip-path:polygon(0% 0%, 100% 0%,100% 93%,0% 100%);
         -webkit-clip-path:polygon(0% 0%, 100% 0%,100% 93%,0% 100%);
     }
 
@@ -1210,8 +1210,25 @@ font-size: 3.5vw;
 
 /*KONTAKT SIDE*/
 
+#kontakt-orangeContainer {
+    background-color: rgb(212, 105, 61);
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    text-align: justify;
+    margin: 30vw 0 30vw;
+    padding: 4vw 2vw;
+}
+
 .contactpage {
     text-align: center;
+}
+
+.contactpage p{
+    font-size: 3vw;
+    padding: 4vw;
 }
 
 .contactpage a {
@@ -1225,7 +1242,17 @@ font-size: 3.5vw;
 }
 
 #vektorklaus-img {
+    position: relative;
+    top: 8vw;
     width: 25vw;
     height: auto;
     margin: 3%;
+}
+
+@media screen and (min-width: 768px) {
+    #kontakt-orangeContainer {
+        margin: 15vw 0 7vw;
+        clip-path:polygon(0% 0%, 100% 0%,100% 96%,0% 100%);
+        -webkit-clip-path:polygon(0% 0%, 100% 0%,100% 96%,0% 100%);
+    }
 }
