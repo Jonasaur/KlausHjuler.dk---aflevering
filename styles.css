@@ -507,6 +507,8 @@ width: 50%;
     transition: 1s ease;
 } 
 
+
+
 /* BREAKPOINT CHANGES index */
 
 @media screen and (min-width: 768px) {
@@ -610,6 +612,26 @@ width: 50%;
     .collapsible {
         display: none;
     }
+
+    /* Knapper til undersiderne på postersne*/
+
+    .collapsebutton{
+        background-color: rgb(213, 105, 63);
+        border: none;
+        text-decoration: none;
+        width: 20vw;
+        height: 4vw;
+        cursor: pointer;
+        font-size: 1.5vw;
+        justify-content: center;
+        margin: auto;
+        width: 50%;
+        border-radius: 5px 5px 5px 5px;
+        }
+        
+        .collapsebutton a{
+            text-decoration: none;
+        }
 }
 
 /* MOBILE foredrag styling */
