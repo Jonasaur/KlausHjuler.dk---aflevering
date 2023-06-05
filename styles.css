@@ -1131,3 +1131,24 @@ font-size: 3.5vw;
 }
 
 
+/*KONTAKT SIDE*/
+
+.contactpage {
+    text-align: center;
+}
+
+.contactpage a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contactpage h2 {
+    font-size: 2.5vw;
+    font-weight: 100;
+}
+
+#vektorklaus-img {
+    width: 25vw;
+    height: auto;
+    margin: 3%;
+}
