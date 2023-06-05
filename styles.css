@@ -43,8 +43,14 @@ footer {
     align-items: center;
     justify-content: space-between;
     height: 60vw;
-    margin-top: 2em;
+    font-size: 3.5vw;
+    margin-top: 10vw;
 }
+
+#copyright {
+    font-size: 3vw;
+}
+
 
 #so-meWrapper {
     width: 60%;
@@ -53,16 +59,16 @@ footer {
 }
 
 .so-me {
+    font-size: 5.5vw;
     text-decoration: none;
     color: #fff;
 }
 
 #kontakt {
     background-color: #4c828e;
-    margin-top: 1em;
     border: none;
     outline: 0;
-    padding: 0.5vw 1vw;
+    padding: 1.5vw 3vw;
     font-family: "fugaz one";
     font-size: 4vw;
     font-weight: 100;
@@ -204,7 +210,7 @@ footer {
 }
 
 .shadow {
-    filter: drop-shadow(0.1vw 0.2vw 0.2vw #111);
+    filter: drop-shadow(0.5vw 0.5vw 0.5vw #111);
 }
 
 /* BREAKPOINT CHANGES gennemgående design  */
@@ -231,7 +237,8 @@ footer {
         clip-path:polygon(0% 100%, 100% 100%,100% 0%,0% 10%);
         -webkit-clip-path:polygon(0% 100%, 100% 100%,100% 0%,0% 10%);
         height: 20vw;
-        padding: 5vw 0 2vw;
+        padding: 5vw 0 3vw;
+        margin-top: 0vw;
     }
 
     #copyright {
@@ -243,10 +250,14 @@ footer {
     }
 
     .so-me {
+        margin: 2vw 0 1vw;
+        font-size: 3.5vw;
         line-height: 2.5vw;
     }
 
     #kontakt {
+        margin: 3vw;
+        padding: 0.5vw 1vw;
         font-size: 1.5vw;
     }
 
@@ -262,6 +273,10 @@ footer {
     .topnavDesk {
         display: flex;
     }
+
+    .shadow {
+        filter: drop-shadow(0.1vw 0.2vw 0.2vw #111);
+    }    
 }
 
 /* MOBILE index styling */
@@ -295,20 +310,20 @@ footer {
 
 #index-heroButton {
     position: relative;
-    width: 25vw;
-    height: 10vw;
+    width: 33vw;
+    height: 12vw;
     border: none;
     outline: 0;
     background-color: rgb(66, 115, 130);
     text-align: center;
-    margin-top: 2vw;
+    margin-top: 8vw;
     cursor: pointer;
 }
 
 #index-heroButton a {
     font-family: "fugaz one";
     font-weight: 100;
-    font-size: 2.5vw;
+    font-size: 5vw;
     text-decoration: none;
     color: #fff;
 }
@@ -327,15 +342,18 @@ footer {
 }
 
 #index-orangeContainer article h2 {
-    font-size: 5vw;
+    position: relative;
+    top: -27vw;
+    font-size: 6vw;
     text-align: center;
     color: #fff;
-    margin-top: 5vw;
 }
 
 #index-orangeContainer p {
-    padding: 3vw;
-    font-size: 3.5vw;
+    position: relative;
+    top: -18vw;
+    padding: 5vw 10vw;
+    font-size: 4vw;
     text-align: justify;
     color: #fff;
 }
@@ -349,18 +367,20 @@ footer {
 }
 
 .læsMere {
+    position: relative;
+    top: -15vw;
     background-color: #4c828e;
     border: none;
     outline: none;
     width: 40%;
-    height: 8vw;
+    height: 10vw;
     margin-bottom: 5vw;
 }
 
 .læsMere a {
     color: #fff;
     font-family: "fugaz one";
-    font-size: 4vw;
+    font-size: 5vw;
     text-decoration: none;
 }
 
@@ -369,6 +389,7 @@ footer {
     color: #fff;
     background-color: rgb(213, 105, 63);
     padding: 5vw;
+    margin-bottom: 10vw;
 }
 
 /* css til funktionen der folder hans tidligere arbejde ud på mobilen */
@@ -520,13 +541,16 @@ footer {
         margin: 5vw 0;
     }
 
+    #index-heroButton a {
+        font-size: 2.5vw;
+    }
+
     #index-orangeContainer {
         width: 100%;
         height: fit-content;
         flex-direction: row;
         clip-path:polygon(0% 0%, 100% 0%,100% 100%,0% 95%);
         -webkit-clip-path:polygon(0% 0%, 100% 0%,100% 100%,0% 95%);
-        overflow: hidden;
         margin-top: 10vw;
         padding-bottom: 5vw;
         padding-top: 2vw;
@@ -540,11 +564,14 @@ footer {
     
     #index-orangeContainer article h2 {
         font-size: 2vw;
+        margin: 0;
+        top: 0;
     }
 
     #index-orangeContainer article p {
         padding: 2vw;
         font-size: 1.5vw;
+        top: 0;
     }
 
     #portrait {
@@ -573,8 +600,10 @@ footer {
         outline: none;
         width: 40%;
         height: 4vw;
+        margin: 2vw;
         text-decoration: none;
         cursor: pointer;
+        top: 0;
     }
     
     .læsMere a {
@@ -600,7 +629,7 @@ footer {
         width: 125vw;
         font-family: "fugaz one";
         padding: 3vw;
-        transform: rotate(1.5deg);
+        transform: rotate(1.7deg);
     }
 
     #skewContainer {
@@ -837,6 +866,7 @@ font-size: 3.5vw;
     font-family: "fugaz one";
     font-size: 3vw;
     padding: 0 1em 0 1em;
+    cursor: pointer;
 }
 
 .collapseContent2 {
