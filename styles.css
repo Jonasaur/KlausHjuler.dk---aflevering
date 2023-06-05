@@ -163,6 +163,7 @@ footer {
     display: inline-block;
     position: relative;
     color: #fff;
+    font-family: "fugaz one";
 }
 
 .hoverEffect:after {
@@ -407,12 +408,16 @@ footer {
 }
 
 .collapseContent {
-    padding: 0 18px;
+    padding: 0 5vw 3vw;
     display: none;
     overflow: hidden;
     color: #fff;
     background-color: rgb(66, 115, 130);
     text-align: justify;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
 }
 
 .collapsible p {
@@ -430,6 +435,25 @@ footer {
 
 #plus3 {
     font-size: 5vw
+}
+
+/*Læs mere knapperne inde i collapsables*/
+
+.collapsebutton{
+background-color: rgb(213, 105, 63);
+border: none;
+text-decoration: none;
+width: 45vw;
+height: 6vw;
+cursor: pointer;
+font-size: 3vw;
+justify-content: center;
+margin: auto;
+width: 50%;
+}
+
+.collapsebutton a{
+    text-decoration: none;
 }
 
 /* DESKTOP index styling */
@@ -509,6 +533,8 @@ footer {
     -webkit-transition: opacity 1s ease; 
     transition: 1s ease;
 } 
+
+
 
 /* BREAKPOINT CHANGES index */
 
@@ -641,6 +667,26 @@ footer {
     .collapsible {
         display: none;
     }
+
+    /* Knapper til undersiderne på postersne*/
+
+    .collapsebutton{
+        background-color: rgb(213, 105, 63);
+        border: none;
+        text-decoration: none;
+        width: 20vw;
+        height: 4vw;
+        cursor: pointer;
+        font-size: 1.5vw;
+        justify-content: center;
+        margin: auto;
+        width: 50%;
+        border-radius: 5px 5px 5px 5px;
+        }
+        
+        .collapsebutton a{
+            text-decoration: none;
+        }
 }
 
 /* MOBILE foredrag styling */
@@ -882,7 +928,7 @@ font-size: 3.5vw;
 
 }
 
-table{
+.collapseContent2 table{
     border-collapse: separate;
     border-spacing: 1vw;
     width: 100%;
@@ -891,7 +937,7 @@ table{
     table-layout: fixed;
 }
 
-td {
+.collapseContent2 td {
   width: 33%;
 }
 
@@ -910,6 +956,103 @@ td {
     .collapsible2{
         font-size: 1.5vw;
     }
+
+    .collapseContent2{
+        font-size: 1.2vw;
+    }
+
+
+}
+
+
+/* STUNT MAN UNDERSIDE*/ 
+
+#stuntman-heroImage {
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
+    url(img/KHindex_web.webp);
+    height: 150vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+.tabelListe1{
+    background-color: #4c828e;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.tabelListe1 table{
+    padding: 0vw 3vw 1vw;
+    border-collapse: separate;
+    border-spacing: 1vw;
+    width: 100%;
+    justify-self: center;
+    text-align: center;
+    table-layout: fixed;
+}
+
+.tabelListe1 th{
+    text-decoration: underline;
+}
+
+.tabelelement {
+    align-items: center;
+    text-align: center;
+}
+
+.tabelelement h4{
+    font-family: "fugaz one";
+    font-size: 5vw;
+
+}
+
+/*STUNTMAN UNDERSIDE DESKTOP*/
+
+@media screen and (min-width: 768px) {
+ 
+    .tabelelement h4{
+        font-size: 3vw;
+    
+    }
+
+}
+
+
+
+/*SKUESPILLER UNDERSIDE */
+
+#skuespiller-heroImage {
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
+    url(img/KHindex_web.webp);
+    height: 150vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+
+
+/*FILMINSTRUKTØR UNDERSIDE */
+
+#filminstruktør-heroImage {
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
+    url(img/KHindex_web.webp);
+    height: 150vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 
 
