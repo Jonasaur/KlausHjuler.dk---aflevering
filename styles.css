@@ -11,7 +11,6 @@ body {
 }
 
 header {
-    /* background-color: rgb(212, 105, 61); */
     height: 10vw;
     position: relative;
     top: 10vw;
@@ -265,6 +264,7 @@ footer {
     }
 
     header {
+        background-color: rgb(212, 105, 61);
         height: 6.1846vw;
         top: 6.4736vw;
     }
