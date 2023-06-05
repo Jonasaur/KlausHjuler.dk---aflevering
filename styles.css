@@ -456,7 +456,6 @@ footer {
     text-align: center;
     vertical-align: middle;
     line-height: 100%;
-    -webkit-text-stroke: 0.01vw black;
 }
 
 /* indhold der ligger over billederne */

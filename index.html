@@ -5,8 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Klaus Hjuler - Foredragsholder og underviser</title>
-    <meta name="Klaus Hjuler - foredragsholder, underviser, stuntman og -koordinator, skuespiller og filminstruktør" content="This is a description of my webpage content with relevant keywords.">
+    <meta name="Klaus Hjuler - foredragsholder, underviser, stuntman og -koordinator, skuespiller og filminstruktør" content="Foredrag, workshop, undervisning, læring, inspiration, action, aktivitet, ">
+    
+    <!--Link til Stylesheet-->
     <link rel="stylesheet" href="styles.css">
+    
+    <!--Link til Google Font-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fugaz One">
     
     <!--Link der gør det muligt at hente ikoner fra Font Awesome -->
@@ -15,6 +19,8 @@
 
 <body>
     <header> 
+        
+        <!--Nav bar til mobil version -->
         <section class="topnavMobile">
             <a href="index.html" class="active">
                 <h2>KLAUS HJULER</h2>
@@ -30,11 +36,14 @@
                     <h2>MIN HISTORIE</h2>
                 </a>
             </nav>
+       
+            <!--Burger menu - Javascript element-->
             <a href="javascript:void(0)" class="icon" onclick="menuToggle()">
                 <i class="fa fa-bars"></i>
             </a>
         </section>
         
+        <!--Nav bar til desktop-->
         <section class="topnavDesk">
             <a href="index.html"><img src="img/LogoHjemmesideBlåSVG.svg" alt=""></a>
             <nav>
@@ -165,24 +174,151 @@
                 <button>LÆS MERE</button>
             </div>
         </div>
+    <!--Main section - alt andet end header og footer. Sidens indhold, der varierer fra side til side.-->
+    <main>
         
-        <div id="BG2" class="poster">
-            <h2>SKUESPILLER</h2>
-            <div class="posterContent">
+        <!--Øverste billede og tekst på siden - Hero Image og -tekst (overskrifter, H1)-->
+        <section id="index-heroImage">
+            <article id="index-heroText">
+                <h1>FOREDRAGSHOLDER & UNDERVISER</h1>
+                <p>
+                    Underholdende foredrag og workshops, 
+                    der kan inspirere og motivere den unge generation til at følge deres passion og udleve
+                    drømmen. Det handler om at lære noget nyt, opbygge 
+                    fællesskaber og have det sjovt, for derigennem at udvikle og udfordre sig selv.
+                </p>
                 
-            </div>
-        </div>
-        <div id="BG3" class="poster">
-            <h2>FILMINSTRUKTØR</h2>
-            <div class="posterContent">
+                <!--'Call to action' knap-->
+                <button href="" id="index-heroButton" class="shadow">
+                    <a href="kontakt.html" class="hoverEffect">BOOK NU</a>
+                </button>
+            </article>
+        </section>
+
+        <!--Kort intro/profil af Klaus Hjuler - containter, billede, tekst og knap-->
+        <section id="index-orangeContainer">
+            <img id="portrait" src="img/portræt_web.webp" alt="Portrætbillede af Klaus Hjuler">
+            <article>
+                <h2>VELKOMMEN! MIT NAVN ER KLAUS HJULER.</h2>
+                <p>
+                    Jeg har arbejdet som stuntman siden 1985, og har efterhånden medvirket 
+                    i hundredvis af film-, tv-, event-, og teaterproduktioner - bl.a. "Krummerne", 
+                    "Anja og Viktor", "Borgen", "Tempelriddernes Skat", "Flammen & Citronen", "Druk" 
+                    og "Retfærdighedens Ryttere". Derudover har jeg også haft roller som skuespiller 
+                    og været filminstruktør.  Det har givet mig en masse lærerige og sjove oplevelser 
+                    samt viden, som jeg gerne vil dele ud af. Mit primære fokus er derfor i dag på 
+                    foredrag, workshops og undervisning.
+                </p>
                 
-            </div>
-        </div>
-    </section>
-</main>
+                <!--Knap/link til 'min historie' siden-->
+                <button class="læsMere shadow">
+                    <a href="om_mig.html" class="hoverEffect">LÆS MERE</a>
+                </button>
+            </article>
+        </section>
+        
+
+        <!-- Info buttons til mobile version -->
+        <section class="h2wrap shadow">
+            <h2 class="h2slant">LÆS MERE OM MIT ARBEJDE SOM...</h2> 
+        </section>
+
+        <button class="collapsible" onclick="plus1Toggle()">
+            <h3>STUNTMAN OG STUNTKOORDINATOR</h3> 
+            <p id="plus1">+</p>
+        </button>
+        <section class="collapseContent">
+            <img src="img/Cocktail Kitten.jpg" alt="">
+            <p>
+                Mit arbejde indebærer alt fra små slagsmålsscener og bananskræls-fald, til store 
+                battle-scener, semiburns, påkørsler og høje fald. Jeg udfører ikke hardcore stunts 
+                længere, men laver dog stadig jævnligt action på film og tv, både foran og bag 
+                kameraet. <br> <br> Jeg sætter en ære i at levere det bedste stuntarbejde til mine 
+                kunder. Hvis jeg ikke selv er i stand til at hjælpe med en opgave, så anbefaler 
+                jeg gerne de mest kompetente stuntfolk til både castere, producere og instruktører. 
+                Danmarks stuntbranche er meget lille, og selvom stuntfolk både er kollegaer og 
+                konkurrenter, så arbejder vi jævnligt sammen på kryds og tværs. 
+                <br> <br>
+                Siden 1988 har jeg arbejdet professionelt som stuntman og stuntkoordinator på 
+                over 150 danske og nordiske film- og tv-produktioner. 
+                <br> <br>
+                Her kan du se et uddrag:
+            </p>
+
+            <!-- Indsæt titler fra CV i kolonner!! -->
+        </section>
+
+        <button class="collapsible" onclick="plus2Toggle()">
+            <h3>SKUESPILLER</h3> 
+            <p id="plus2">+</p>
+        </button>
+        <section class="collapseContent">
+            <img src="img/Cocktail Kitten.jpg" alt="">
+            <p>
+                Jeg fik som 16-årig min første professionelle opgave som skuespiller: En hovedrolle 
+                i DR-komedieserien "Sådan er det bare", instrueret af Ebbe Langberg. Siden da har jeg 
+                haft en del mindre opgaver som skuespiller og statist, mens meget af det typisk har 
+                flydt sammen med mit arbejde som stuntman. <br> <br>
+                Her kan du se et uddrag af de film og TV-serier jeg har medvirket i:
+            </p>
+
+            <p>
+                Ørnen (2004-2006) - Gamma 1 <br>
+                2900 Happiness (2007-2009) - Politibetjent 1 <br>
+                Forbrydelsen (2007) - Betjent <br>
+                Monsterjægerne (2009) - Stand-in for Oliver <br>
+                Borgen (2010-2022) - Chauffør <br>
+                Fortidens Skygge - Den som dræber (2012) - Mand kigger på hus <br>
+                Lad de døde hvile (2018) - Pedel Jens <br>
+                De forbandede år (2020) - Vagtmand <br>
+                Retfærdighedens Ryttere (2020) - Rocker
+            </p>
+        </section>
+
+        <button class="collapsible" onclick="plus3Toggle()">
+            <h3>FILMINSTRUKTØR</h3> 
+            <p id="plus3">+</p>
+        </button>
+        <section class="collapseContent">
+            <img src="img/Cocktail Kitten.jpg" alt="">
+            <p>
+                Gennem min karriere i filmbranchen, har jeg draget en masse erfaring, som sammen 
+                med min passion for film og gode fortællinger, har gjort, at jeg også har kastet 
+                mig ud i at instruere et par kortfilm og tilmed skrive manuskriptet. 
+                <br> <br>
+                Sort, hvid og grå (2000)<br>
+                Fjendeblod (2021) - Nomineret til Ekko Shortlist Awards 2022
+            </p>
+        </section>
+
+        <!--Trapez-containere til desktop med links. På desktop versionen bliver man sendt videre til en underside. Så den er anderledes fra mobil versionen.-->
+        <section id="skewContainer">
+            <article id="BG1" class="poster">
+                <h2>STUNTMAN OG <br> STUNTKOORDINATOR</h2>
+                
+                <!--De nedenstående div'er bliver kun brugt som styling. Det er ikke et seo element i forvejen, så derfor er det ikke et problem her.-->
+                <div class="posterContent">
+                    <button>LÆS MERE</button>
+                </div>
+            </article>
+            
+            <article id="BG2" class="poster">
+                <h2>SKUESPILLER</h2>
+                <div class="posterContent">
+                    
+                </div>
+            </article>
+            <a id="BG3" class="poster">
+                <h2>FILMINSTRUKTØR</h2>
+                <div class="posterContent">
+                    
+                </div>
+            </article>
+        </section>
+    </main>
     
+    <!--Footer med links til SoMe og kontakt-siden-->
     <footer>
-        
         <p>TAK FOR BESØGET - DU KAN FINDE MEGET MERE PÅ...</p>
         
         <section id="so-meWrapper">
@@ -206,14 +342,16 @@
                 <i class="fa fa-imdb fa-2x so-me"></i>
             </a>
         </section>
-            
+        
+        <!--Link til kontakt-siden-->  
         <button id="kontakt" class="shadow">
-                <a href="kontakt.html"><span class="hoverEffectMini">KONTAKT</span></a>
+            <a href="kontakt.html"><span class="hoverEffectMini">KONTAKT</span></a>
         </button>
         
         <p id="copyright">Copyright © 2023, Klaus Hjuler</p>
     </footer>
 
+    <!--Link til javascript document-->
     <script src="script.js"></script>
 </body>
 </html>
