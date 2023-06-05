@@ -11,7 +11,7 @@ body {
 }
 
 header {
-    background-color: rgb(212, 105, 61);
+    /* background-color: rgb(212, 105, 61); */
     height: 10vw;
     position: relative;
     top: 10vw;
@@ -85,7 +85,6 @@ footer {
     font-family: "fugaz one";
     overflow: hidden;
     background-color: #333;
-    position: relative;
 }
 
 .topnavMobile h2 {
@@ -285,10 +284,10 @@ footer {
 
 #index-heroImage {
     background-image: 
-    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
+    linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)),
     url(img/KHindex_web.webp);
     height: 150vw;
-    background-position: center;
+    background-position-x: 30%;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -521,6 +520,7 @@ footer {
     #index-heroImage {
         height: 42vw;
         top: 0;
+        background-position: center;
     }
 
     #index-heroText {
@@ -719,6 +719,7 @@ font-size: 3.5vw;
     line-height: 10vw;
     color: #fff;
     font-family: "fugaz one";
+    font-size: 3vw;
 }
 
 /* knap */
@@ -730,7 +731,7 @@ font-size: 3.5vw;
     height: 100%;
     font-family: "fugaz one";
     font-weight: 100;
-    font-size: 3vw;
+    font-size: 4vw;
     color: #fff;
     text-align: center;
     cursor: pointer;
@@ -750,7 +751,7 @@ font-size: 3.5vw;
         top: 26.4724vw;
     }
 
-    #foredrag-heroText p{
+    #foredrag-heroText p {
         font-size: 1.5vw;
         }
 
@@ -910,3 +911,5 @@ td {
         font-size: 1.5vw;
     }
 }
+
+
