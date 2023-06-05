@@ -26,8 +26,9 @@ h1 {
     margin: 1vw;
 }
 
-h2{
+h2 {
     font-family: "fugaz one";
+    font-size: 5vw;
     font-weight: 100;
     margin: 0;
     padding: 0;
@@ -276,6 +277,7 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    top: -10vw;
 }
 
 /* content til containeren  */
@@ -317,7 +319,7 @@ footer {
     background-color: rgb(212, 105, 61);
     position: relative;
     height: fit-content;
-    top: -8vw;
+    top: -10vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -328,11 +330,12 @@ footer {
     font-size: 5vw;
     text-align: center;
     color: #fff;
+    margin-top: 5vw;
 }
 
 #index-orangeContainer p {
     padding: 3vw;
-    font-size: 4.444vw;
+    font-size: 3.5vw;
     text-align: justify;
     color: #fff;
 }
@@ -350,15 +353,14 @@ footer {
     border: none;
     outline: none;
     width: 40%;
-    height: 4vw;
-    text-decoration: none;
-    cursor: pointer;
+    height: 8vw;
+    margin-bottom: 5vw;
 }
 
 .læsMere a {
     color: #fff;
     font-family: "fugaz one";
-    font-size: 2vw;
+    font-size: 4vw;
     text-decoration: none;
 }
 
@@ -391,6 +393,11 @@ footer {
     color: #fff;
     background-color: rgb(66, 115, 130);
     text-align: justify;
+}
+
+.collapsible p {
+    font-family: "fugaz one";
+    font-size: 4.5vw;
 }
 
 #plus1 {
@@ -493,6 +500,7 @@ footer {
     
     #index-heroImage {
         height: 42vw;
+        top: 0;
     }
 
     #index-heroText {
@@ -559,6 +567,23 @@ footer {
         height: 100%;
     }
 
+    .læsMere {
+        background-color: #4c828e;
+        border: none;
+        outline: none;
+        width: 40%;
+        height: 4vw;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+    .læsMere a {
+        color: #fff;
+        font-family: "fugaz one";
+        font-size: 2vw;
+        text-decoration: none;
+    }
+
     .h2wrap {
         position: relative;
         top: -7vw;
@@ -619,7 +644,7 @@ font-size: 3.5vw;
     background-color: rgb(212, 105, 61);
     position: relative;
     height: fit-content;
-    /* top: -10vw; */
+    top: -10vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -701,6 +726,7 @@ font-size: 3.5vw;
         }
 
     .orangeContainer {
+        top: 0;
         clip-path:polygon(0% 0%, 100% 0%,100% 88%,0% 100%);
         -webkit-clip-path:polygon(0% 0%, 100% 0%,100% 93%,0% 100%);
     }
@@ -708,7 +734,7 @@ font-size: 3.5vw;
     .orangeContainer h2 {
         text-align: center;
         font-family: "fugaz one";
-    
+        top: 0;
     }
 
     .orangeContainer p {
