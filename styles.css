@@ -403,8 +403,9 @@ footer {
     align-items: center;
     justify-content: space-between;
     color: #fff;
-    font-size: 1em;
-    padding: 0 1em 0 1em;
+    font-family: "fugaz one";
+    font-size: 4.5vw;
+    padding: 0 4vw;
 }
 
 .collapseContent {
@@ -417,24 +418,29 @@ footer {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-
 }
 
-.collapsible p {
-    font-family: "fugaz one";
-    font-size: 4.5vw;
+.collapseContent img {
+    width: 100%;
+}
+
+.small {
+    font-size: 3.5vw;
 }
 
 #plus1 {
-    font-size: 5vw
+    font-size: 5vw;
+    margin: 1vw
 }
 
 #plus2 {
-    font-size: 5vw
+    font-size: 5vw;
+    margin: 1vw
 }
 
 #plus3 {
-    font-size: 5vw
+    font-size: 5vw;
+    margin: 1vw
 }
 
 /*Læs mere knapperne inde i collapsables*/
@@ -699,7 +705,7 @@ width: 50%;
     background-image: url(img/KHforedrag_web.webp);
     transition: background-image 1.5s ease-in-out;
     height: 150vw;
-    background-position: center;
+    background-position-x: 40%;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -916,9 +922,34 @@ font-size: 3.5vw;
     justify-content: space-between;
     color: #fff;
     font-family: "fugaz one";
-    font-size: 3vw;
-    padding: 0 1em 0 1em;
+    font-size: 4.5vw;
+    padding: 0 4vw;
     cursor: pointer;
+}
+
+#plus4 {
+    font-size: 5vw;
+    margin: 2vw;
+}
+
+#plus5 {
+    font-size: 5vw;
+    margin: 2vw;
+}
+
+#plus6 {
+    font-size: 5vw;
+    margin: 2vw;
+}
+
+#plus7 {
+    font-size: 5vw;
+    margin: 2vw;
+}
+
+#plus8 {
+    font-size: 5vw;
+    margin: 2vw;
 }
 
 .collapseContent2 {
@@ -929,7 +960,6 @@ font-size: 3.5vw;
     column-gap: 1vw;
     color: #fff;
     background-color: rgb(66, 115, 130);
-
 }
 
 .collapseContent2 table{
@@ -942,11 +972,9 @@ font-size: 3.5vw;
 }
 
 .collapseContent2 td {
-  width: 33%;
+    width: 33%;
+    font-size: 3vw;
 }
-
-
-
 
 /* BREAKPOINT CHANGES om mig */
 
@@ -957,15 +985,43 @@ font-size: 3.5vw;
         top: 0;
     }
 
-    .collapsible2{
-        font-size: 1.5vw;
+    .collapsible2 {
+        padding: 0 2vw;
     }
 
-    .collapseContent2{
+    .collapsible2 p {
+        font-size: 2vw;
+    }
+
+    #plus4 {
+        font-size: 3vw;
+        margin: 2vw;
+    }
+
+    #plus5 {
+        font-size: 3vw;
+        margin: 2vw;
+    }
+
+    #plus6 {
+        font-size: 3vw;
+        margin: 2vw;
+    }
+
+    #plus7 {
+        font-size: 3vw;
+        margin: 2vw;
+    }
+
+    #plus8 {
+        font-size: 3vw;
+        margin: 2vw;
+    }
+
+    .collapseContent2 td {
+        width: 33%;
         font-size: 1.2vw;
     }
-
-
 }
 
 
@@ -983,7 +1039,7 @@ font-size: 3.5vw;
 }
 
 
-.tabelListe1{
+.tabelListe1 {
     background-color: #4c828e;
     color: #fff;
     display: flex;
@@ -992,7 +1048,7 @@ font-size: 3.5vw;
     width: 100%;
 }
 
-.tabelListe1 table{
+.tabelListe1 table {
     padding: 0vw 3vw 1vw;
     border-collapse: separate;
     border-spacing: 1vw;
@@ -1002,9 +1058,16 @@ font-size: 3.5vw;
     table-layout: fixed;
 }
 
-.tabelListe1 th{
+.tabelListe1 th {
+    font-size: 3.5;
     text-decoration: underline;
 }
+
+.tabelListe1 td {
+    font-size: 3vw;
+    text-align: left;
+}
+
 
 .tabelelement {
     align-items: center;
@@ -1023,9 +1086,17 @@ font-size: 3.5vw;
  
     .tabelelement h4{
         font-size: 3vw;
-    
     }
 
+    .tabelListe1 th {
+        font-size: 2vw;
+        text-decoration: underline;
+    }
+
+    .tabelListe1 td {
+        font-size: 1.5vw;
+        text-align: left;
+    }
 }
 
 

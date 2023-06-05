@@ -13,80 +13,111 @@
     <script src="https://kit.fontawesome.com/e536aa7944.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
-    <body>
-        <header> 
-            <section class="topnavMobile">
-                <a href="index.html" class="active">
-                    <h2>KLAUS HJULER</h2>
+    <header> 
+        <section class="topnavMobile">
+            <a href="index.html" class="active">
+                <h2>KLAUS HJULER</h2>
+            </a>
+            <nav id="myLinks">
+                <a href="foredrag.html">
+                    <h2>FOREDRAG</h2>
                 </a>
-                <nav id="myLinks">
-                    <a href="foredrag.html">
-                        <h2>FOREDRAG</h2>
-                    </a>
-                    <a href="workshop.html">
-                        <h2>WORKSHOPS</h2>
-                    </a>
-                    <a href="om_mig.html">
-                        <h2>MIN HISTORIE</h2>
-                    </a>
-                </nav>
-                <a href="javascript:void(0)" class="icon" onclick="menuToggle()">
-                    <i class="fa fa-bars"></i>
+                <a href="workshop.html">
+                    <h2>WORKSHOPS</h2>
                 </a>
-            </section>
+                <a href="om_mig.html">
+                    <h2>MIN HISTORIE</h2>
+                </a>
+            </nav>
+            <a href="javascript:void(0)" class="icon" onclick="menuToggle()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </section>
+        
+        <section class="topnavDesk">
+            <a href="index.html"><img src="img/LogoHjemmesideBlåSVG.svg" alt=""></a>
+            <nav>
+                <a href="foredrag.html"><h2 class="hoverEffect">FOREDRAG</h2></a>
+                <a href="workshop.html"><h2 class="hoverEffect">WORKSHOPS</h2></a>
+                <a href="om_mig.html"><h2 class="hoverEffect">MIN HISTORIE</h2></a>
+            </nav>
+        </section>
+    </header>    
+<main>
+    <section id="skuespiller-heroImage">
+        <article id="foredrag-heroText">
+            <h1>SKUESPILLER</h1>
+            <p>Min tid som stuntman</p>
+        </article>
+    </section>
+
+
+    <section class="orangeContainer">
+        <section>
+            <h2> SIDEN 1988 HAR JEG ARBEJDET PROFFESIONELT SOM STUNTMAN OG STUNTKOORDINATOR PÅ OVER 150 DANSKE OG NORDISKE FILM- OG TV-PRODUKTIONER</h2>
+            <p>
+                Jeg fik som 16-årig min første professionelle opgave som skuespiller: En hovedrolle i DR-komedieserien ‘Sådan er det bare”, instrueret af Ebbe Langberg. Siden da har jeg haft en del mindre opgaver som skuespiller og statist, mens meget af det typisk har flydt sammen med mit arbejde som stuntman.
+            </p>
+
+            <h2> HER KAN DU SE ET UDDRAG AF DE FILM OG TV-SERIER JEG HAR VÆRET MED I:</h2>
+            <p>
+                Ørnen (2004-2006) - Gamma 1
+                <br>
+                2900 Happiness (2007-2009) - Politibetjent 1
+                <br>
+                Forbrydelsen (2007) - Betjent
+                <br>
+                Monsterjægerne (2009) - Stand-in for Oliver
+                <br>
+                Borgen (2010-2022) - Chauffør
+                <br>
+                Fortidens Skygge - Den som dræber (2012) - Mand kigger på hus
+                <br>
+                Lad de døde hvile (2018) - Pedel Jens
+                <br>
+                De forbandede år (2020) - Vagtmand
+                <br>
+                Retfærdighedens Ryttere (2020) - Rocker
+                
+            </p>
+        </section>
+    </section>
+</main>
+
+    <!--Footer med links til SoMe og kontakt-siden-->
+    <footer>
+        <p>TAK FOR BESØGET - DU KAN FINDE MEGET MERE PÅ...</p>
+        
+        <section id="so-meWrapper">
+            <a class="hoverEffectMini" href="#">
+                <i class="fa-brands fa-tiktok so-me"></i>
+            </a>
             
-            <section class="topnavDesk">
-                <a href="index.html"><img src="img/LogoHjemmesideBlåSVG.svg" alt=""></a>
-                <nav>
-                    <a href="foredrag.html"><h2 class="hoverEffect">FOREDRAG</h2></a>
-                    <a href="workshop.html"><h2 class="hoverEffect">WORKSHOPS</h2></a>
-                    <a href="om_mig.html"><h2 class="hoverEffect">MIN HISTORIE</h2></a>
-                </nav>
-            </section>
-        </header>
-
-        <section id="skuespiller-heroImage">
-            <article id="foredrag-heroText">
-                <h1>SKUESPILLER</h1>
-                <p>Min tid som stuntman</p>
-            </article>
+            <a class="hoverEffectMini" href="https://www.facebook.com/Stunts.dk" target="_blank"> 
+                <i class="fa fa-facebook so-me"></i>
+            </a>
+           
+            <a class="hoverEffectMini" href="https://www.instagram.com/klauswheeler" target="_blank">
+                <i class="fa fa-instagram so-me"></i>
+            </a>
+            
+            <a class="hoverEffectMini" href="#" target="_blank">
+                <i class="fa fa-youtube so-me"></i>
+            </a>
+            
+            <a class="hoverEffectMini" href="https://www.imdb.com/name/nm0387136/" target="_blank">
+                <i class="fa fa-imdb so-me"></i>
+            </a>
         </section>
+        
+        <!--Link til kontakt-siden-->  
+        <button id="kontakt" class="shadow">
+            <a href="kontakt.html"><span class="hoverEffectMini">KONTAKT</span></a>
+        </button>
+        
+        <p id="copyright">Copyright © 2023, Klaus Hjuler</p>
+    </footer>    
 
-
-        <section class="orangeContainer">
-            <section>
-                <h2> SIDEN 1988 HAR JEG ARBEJDET PROFFESIONELT SOM STUNTMAN OG STUNTKOORDINATOR PÅ OVER 150 DANSKE OG NORDISKE FILM- OG TV-PRODUKTIONER</h2>
-                <p>
-                    Jeg fik som 16-årig min første professionelle opgave som skuespiller: En hovedrolle i DR-komedieserien ‘Sådan er det bare”, instrueret af Ebbe Langberg. Siden da har jeg haft en del mindre opgaver som skuespiller og statist, mens meget af det typisk har flydt sammen med mit arbejde som stuntman.
-                </p>
-
-                <h2> HER KAN DU SE ET UDDRAG AF DE FILM OG TV-SERIER JEG HAR VÆRET MED I:</h2>
-                <p>
-                    Ørnen (2004-2006) - Gamma 1
-                    <br>
-                    2900 Happiness (2007-2009) - Politibetjent 1
-                    <br>
-                    Forbrydelsen (2007) - Betjent
-                    <br>
-                    Monsterjægerne (2009) - Stand-in for Oliver
-                    <br>
-                    Borgen (2010-2022) - Chauffør
-                    <br>
-                    Fortidens Skygge - Den som dræber (2012) - Mand kigger på hus
-                    <br>
-                    Lad de døde hvile (2018) - Pedel Jens
-                    <br>
-                    De forbandede år (2020) - Vagtmand
-                    <br>
-                    Retfærdighedens Ryttere (2020) - Rocker
-                    
-                </p>
-            </section>
-        </section>
-
-<script src="script.js"></script>
-
-
+    <script src="script.js"></script>
 </body>
 </html>

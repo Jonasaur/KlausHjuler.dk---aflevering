@@ -90,6 +90,30 @@ function plus5Toggle() {
     }
 }
 
+function plus6Toggle() {
+    if (plus6.innerHTML === "+") {
+        plus6.innerHTML = "-"
+    } else {
+        plus6.innerHTML = "+"
+    }
+}
+
+function plus7Toggle() {
+    if (plus7.innerHTML === "+") {
+        plus7.innerHTML = "-"
+    } else {
+        plus7.innerHTML = "+"
+    }
+}
+
+function plus8Toggle() {
+    if (plus8.innerHTML === "+") {
+        plus8.innerHTML = "-"
+    } else {
+        plus8.innerHTML = "+"
+    }
+}
+
 // funktion der skifter mellem baggrunde på workshop
 
 
