@@ -668,9 +668,13 @@ width: 50%;
         display: none;
     }
 
+    .collapseContent {
+        display: none;
+    }
+
     /* Knapper til undersiderne på postersne*/
 
-    .collapsebutton{
+    .collapsebutton {
         background-color: rgb(213, 105, 63);
         border: none;
         text-decoration: none;
@@ -682,11 +686,11 @@ width: 50%;
         margin: auto;
         width: 50%;
         border-radius: 5px 5px 5px 5px;
-        }
+    }
         
-        .collapsebutton a{
-            text-decoration: none;
-        }
+    .collapsebutton a {
+        text-decoration: none;
+    }
 }
 
 /* MOBILE foredrag styling */
