@@ -825,6 +825,7 @@ font-size: 3.5vw;
 
 @media screen and (min-width: 768px) {
     #workshop-heroImage {
+        background-position-y: -20%;
         height: 42vw;
         top: 0;
     }
@@ -900,6 +901,7 @@ td {
 
 @media screen and (min-width: 768px) {
     #omMig-heroImage {
+        background-position-y: -10%;
         height: 42vw;
         top: 0;
     }
