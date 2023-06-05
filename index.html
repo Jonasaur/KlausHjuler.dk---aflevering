@@ -5,8 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Klaus Hjuler - Foredragsholder og underviser</title>
-    <meta name="Klaus Hjuler - foredragsholder, underviser, stuntman og -koordinator, skuespiller og filminstruktør" content="This is a description of my webpage content with relevant keywords.">
+    <meta name="Klaus Hjuler - foredragsholder, underviser, stuntman og -koordinator, skuespiller og filminstruktør" content="Foredrag, workshop, undervisning, læring, inspiration, action, aktivitet, ">
+    
+    <!--Link til Stylesheet-->
     <link rel="stylesheet" href="styles.css">
+    
+    <!--Link til Google Font-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fugaz One">
     
     <!--Link der gør det muligt at hente ikoner fra Font Awesome -->
@@ -15,6 +19,8 @@
 
 <body>
     <header> 
+        
+        <!--Nav bar til mobil version -->
         <section class="topnavMobile">
             <a href="index.html" class="active">
                 <h2>KLAUS HJULER</h2>
@@ -30,11 +36,14 @@
                     <h2>MIN HISTORIE</h2>
                 </a>
             </nav>
+       
+            <!--Burger menu - Javascript element-->
             <a href="javascript:void(0)" class="icon" onclick="menuToggle()">
                 <i class="fa fa-bars"></i>
             </a>
         </section>
         
+        <!--Nav bar til desktop-->
         <section class="topnavDesk">
             <a href="index.html"><img src="img/LogoHjemmesideBlåSVG.svg" alt=""></a>
             <nav>
@@ -45,7 +54,9 @@
         </section>
     </header>
 
+<!--Main section - alt andet end header og footer. Sidens indhold, der varierer fra side til side.-->
 <main>
+    <!--Øverste billede og tekst på siden - Hero Image og -tekst (overskrifter, H1)-->
     <section id="index-heroImage">
         <article id="index-heroText">
             <h1>FOREDRAGSHOLDER & UNDERVISER</h1>
@@ -55,17 +66,20 @@
                 drømmen. Det handler om at lære noget nyt, opbygge 
                 fællesskaber og have det sjovt, for derigennem at udvikle og udfordre sig selv.
             </p>
+            
+            <!--'Call to action' knap-->
             <button href="" id="index-heroButton" class="shadow">
                 <a href="kontakt.html" class="hoverEffect">BOOK NU</a>
             </button>
         </article>
     </section>
 
+    <!--Kort intro/profil af Klaus Hjuler - containter, billede, tekst og knap-->
     <section id="index-orangeContainer">
-        <img id="portrait" src="img/portræt_web.webp" alt="">
+        <img id="portrait" src="img/portræt_web.webp" alt="Portrætbillede af Klaus Hjuler">
         <div class="portræt"></div>
         <article>
-            <h2>VELKOMMEN! <br> MIT NAVN ER KLAUS HJULER.</h2>
+            <h2>VELKOMMEN! <br> MIT NAVN ER KLAUS HJULER</h2>
             <p>
                 Jeg har arbejdet som stuntman siden 1985, og har efterhånden medvirket 
                 i hundredvis af film-, tv-, event-, og teaterproduktioner - bl.a. "Krummerne", 
@@ -75,6 +89,8 @@
                 samt viden, som jeg gerne vil dele ud af. Mit primære fokus er derfor i dag på 
                 foredrag, workshops og undervisning.
             </p>
+            
+            <!--Knap/link til 'min historie' siden-->
             <button class="læsMere shadow">
                 <a href="om_mig.html" class="hoverEffect">LÆS MERE</a>
             </button>
@@ -84,12 +100,13 @@
 
     <!-- Info buttons til mobile version -->
 
-    <section class="h2wrap shadow">
+     <!-- Info buttons til mobile version -->
+     <section class="h2wrap shadow">
         <h2 class="h2slant">LÆS MERE OM MIT ARBEJDE SOM...</h2> 
     </section>
 
     <button class="collapsible" onclick="plus1Toggle()">
-        <h3>STUNTMAN OG STUNTKOORDINATOR</h3> 
+        <p>STUNTMAN OG STUNTKOORDINATOR</p> 
         <p id="plus1">+</p>
     </button>
     <section class="collapseContent">
@@ -106,7 +123,7 @@
     </section>
 
     <button class="collapsible" onclick="plus2Toggle()">
-        <h3>SKUESPILLER</h3> 
+        <p>SKUESPILLER</p> 
         <p id="plus2">+</p>
     </button>
     <section class="collapseContent">
@@ -122,7 +139,7 @@
     </section>
 
     <button class="collapsible" onclick="plus3Toggle()">
-        <h3>FILMINSTRUKTØR</h3> 
+        <p>FILMINSTRUKTØR</p> 
         <p id="plus3">+</p>
     </button>
     <section class="collapseContent">
@@ -139,68 +156,74 @@
 
 <!-- trapez-containere desktop. Potientielt skal a links være udenpå knapperne.-->
 
+  <!--Trapez-containere til desktop med links. På desktop versionen bliver man sendt videre til en underside. Så den er anderledes fra mobil versionen.-->
     <section id="skewContainer">
-        <div id="BG1" class="poster">
+        <article id="BG1" class="poster">
             <h2>STUNTMAN OG <br> STUNTKOORDINATOR</h2>
+        
+            <!--De nedenstående div'er bliver kun brugt som styling. Det er ikke et seo element i forvejen, så derfor er det ikke et problem her.-->
             <div class="posterContent">
                 <button class="collapsebutton shadow">
                     <a href="stuntman.html" class="hoverEffect">LÆS MERE</a>
                 </button>
             </div>
-        </div>
-        
-        <div id="BG2" class="poster">
+        </article>
+    
+        <article id="BG2" class="poster">
             <h2>SKUESPILLER</h2>
             <div class="posterContent">
                 <button class="collapsebutton shadow">
                     <a href="skuespiller.html" class="hoverEffect">LÆS MERE</a>
                 </button>
             </div>
-        </div>
-        <div id="BG3" class="poster">
+        </article>
+
+        <article id="BG3" class="poster">
             <h2>FILMINSTRUKTØR</h2>
             <div class="posterContent">
                 <button class="collapsebutton shadow">
                     <a href="filminstruktør.html" class="hoverEffect">LÆS MERE</a>
                 </button>
             </div>
-        </div>
-    </section>
+        </article>
+</section>
 </main>
     
+    <!--Footer med links til SoMe og kontakt-siden-->
     <footer>
-        
         <p>TAK FOR BESØGET - DU KAN FINDE MEGET MERE PÅ...</p>
         
         <section id="so-meWrapper">
             <a class="hoverEffectMini" href="#">
-                <i class="fa-brands fa-tiktok fa-2x so-me"></i>
+                <i class="fa-brands fa-tiktok so-me"></i>
             </a>
             
             <a class="hoverEffectMini" href="https://www.facebook.com/Stunts.dk" target="_blank"> 
-                <i class="fa fa-facebook fa-2x so-me"></i>
+                <i class="fa fa-facebook so-me"></i>
             </a>
            
             <a class="hoverEffectMini" href="https://www.instagram.com/klauswheeler" target="_blank">
-                <i class="fa fa-instagram fa-2x so-me"></i>
+                <i class="fa fa-instagram so-me"></i>
             </a>
             
             <a class="hoverEffectMini" href="#" target="_blank">
-                <i class="fa fa-youtube fa-2x so-me"></i>
+                <i class="fa fa-youtube so-me"></i>
             </a>
             
             <a class="hoverEffectMini" href="https://www.imdb.com/name/nm0387136/" target="_blank">
-                <i class="fa fa-imdb fa-2x so-me"></i>
+                <i class="fa fa-imdb so-me"></i>
             </a>
         </section>
-            
+        
+        <!--Link til kontakt-siden-->  
         <button id="kontakt" class="shadow">
-                <a href="kontakt.html"><span class="hoverEffectMini">KONTAKT</span></a>
+            <a href="kontakt.html"><span class="hoverEffectMini">KONTAKT</span></a>
         </button>
         
         <p id="copyright">Copyright © 2023, Klaus Hjuler</p>
     </footer>
 
+    <!--Link til javascript document-->
     <script src="script.js"></script>
 </body>
 </html>
