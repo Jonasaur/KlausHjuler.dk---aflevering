@@ -629,6 +629,7 @@ footer {
         font-family: "fugaz one";
         padding: 3vw;
         transform: rotate(1.7deg);
+        margin-bottom: 0;
     }
 
     #skewContainer {
