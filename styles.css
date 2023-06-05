@@ -1183,7 +1183,7 @@ font-size: 3.5vw;
 #skuespiller-heroImage {
     background-image: 
     linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
-    url(img/KHindex_web.webp);
+    url(img/klaushjuler111.webp);
     height: 150vw;
     background-position: center;
     background-repeat: no-repeat;
@@ -1191,7 +1191,15 @@ font-size: 3.5vw;
     position: relative;
 }
 
+/**SKUESPILLER SIDE DESKTOP */
 
+@media screen and (min-width: 768px){
+
+    #skuespiller-heroImage{
+        height: 42vw;
+        top: 0;
+    }
+}
 
 
 /*FILMINSTRUKTØR UNDERSIDE */
@@ -1199,13 +1207,24 @@ font-size: 3.5vw;
 #filminstruktør-heroImage {
     background-image: 
     linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
-    url(img/KHindex_web.webp);
+    url(img/klaushjuler222.webp);
     height: 150vw;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 }
+
+
+/*FILMINSTRUKTØR DESKTOP*/
+@media screen and (min-width: 768px){
+
+    #filminstruktør-heroImage{
+        height: 42vw;
+        top: 0;
+    }
+}
+
 
 
 /*KONTAKT SIDE*/
