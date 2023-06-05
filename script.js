@@ -96,8 +96,8 @@ function plus5Toggle() {
 document.addEventListener("DOMContentLoaded", function() {
     let BGIndex2 = 0;
     let wimages = [
-        "img/KHworkshop2_web.webp",
-        "img/KHworkshop1_web.webp"
+        "img/KHworkshop1_web.webp",
+        "img/KHworkshop2_web.webp"
     ];
 
     function changeBG2() {
@@ -122,8 +122,8 @@ document.addEventListener("DOMContentLoaded", function() {
 document.addEventListener("DOMContentLoaded", function() {
     let BGIndex3 = 0;
     let oimages = [
-        "img/KHommig2_web.webp",
-        "img/KHommig1_web.webp"
+        "img/KHommig1_web.webp",
+        "img/KHommig2_web.webp"      
     ];
 
     function changeBG3() {
