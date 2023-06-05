@@ -1030,13 +1030,48 @@ font-size: 3.5vw;
 #stuntman-heroImage {
     background-image: 
     linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
-    url(img/KHindex_web.webp);
+    url(img/klaus\ hjuler\ bilstunt.webp);
     height: 150vw;
+    top: -10vw;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 }
+
+/* Orange container til stuntside*/
+
+.orangeContainerStunt{
+    background-color: rgb(212, 105, 61);
+    position: relative;
+    height: fit-content;
+    top: -10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    vertical-align: middle;
+    color: #fff;
+    text-align: justify;
+    padding: 4vw 2vw;
+}
+
+.orangeContainerStunt h2 {
+    text-align: center;
+    margin-top: -1vw;
+
+}
+
+.orangeContainerStunt p {
+    margin-left: 9vw;
+    margin-right: 9vw;
+    font-size: 2.75vw;
+}
+
+.orangeContainerStunt img{
+    max-width: 100%;
+}
+
+
 
 
 .tabelListe1 {
@@ -1080,12 +1115,54 @@ font-size: 3.5vw;
 
 }
 
+
+
 /*STUNTMAN UNDERSIDE DESKTOP*/
 
 @media screen and (min-width: 768px) {
  
     .tabelelement h4{
         font-size: 3vw;
+    }
+
+
+    #stuntman-heroImage{
+        height: 42vw;
+        top: 0;
+    }
+
+    .orangeContainerStunt {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 0;
+        clip-path:polygon(0% 0%, 100% 0%,100% 88%,0% 100%);
+        -webkit-clip-path:polygon(0% 0%, 100% 0%,100% 93%,0% 100%);
+    }
+
+    .orangeContainerStunt h2 {
+        text-align: center;
+        font-family: "fugaz one";
+        top: 0;
+        font-size: 2vw;
+        padding: 0 20vw;
+    }
+
+    .orangeContainerStunt p {
+        font-size: 1.1vw;
+        padding: 0 15vw;
+        /* max-width: 30%; */
+    }
+
+    /* .billedetextwrap{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    } */
+
+    .tabelListe1{
+        clip-path:polygon(0% 0.7%, 100% 0%,100% 99.5%,0% 100%);
+        -webkit-clip-path:polygon(0% 0.7%, 100% 0%,100% 99.5%,0% 100%);
     }
 
     .tabelListe1 th {
