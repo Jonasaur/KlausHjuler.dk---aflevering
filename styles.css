@@ -385,12 +385,16 @@ footer {
 }
 
 .collapseContent {
-    padding: 0 18px;
+    padding: 0 5vw 3vw;
     display: none;
     overflow: hidden;
     color: #fff;
     background-color: rgb(66, 115, 130);
     text-align: justify;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
 }
 
 #plus1 {
@@ -403,6 +407,25 @@ footer {
 
 #plus3 {
     font-size: 5vw
+}
+
+/*Læs mere knapperne inde i collapsables*/
+
+.collapsebutton{
+background-color: rgb(213, 105, 63);
+border: none;
+text-decoration: none;
+width: 45vw;
+height: 6vw;
+cursor: pointer;
+font-size: 3vw;
+justify-content: center;
+margin: auto;
+width: 50%;
+}
+
+.collapsebutton a{
+    text-decoration: none;
 }
 
 /* DESKTOP index styling */
@@ -824,7 +847,7 @@ font-size: 3.5vw;
 
 }
 
-table{
+.collapseContent2 table{
     border-collapse: separate;
     border-spacing: 1vw;
     width: 100%;
@@ -833,7 +856,7 @@ table{
     table-layout: fixed;
 }
 
-td {
+.collapseContent2 td {
   width: 33%;
 }
 
@@ -851,4 +874,53 @@ td {
     .collapsible2{
         font-size: 1.5vw;
     }
+
+    .collapseContent2{
+        font-size: 1.2vw;
+    }
+
+
+}
+
+
+/* STUNT MAN UNDERSIDE*/ 
+
+#stuntman-heroImage {
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
+    url(img/KHindex_web.webp);
+    height: 150vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+/*SKUESPILLER UNDERSIDE */
+
+#skuespiller-heroImage {
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
+    url(img/KHindex_web.webp);
+    height: 150vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+
+/*FILMINSTRUKTØR UNDERSIDE */
+
+#filminstruktør-heroImage {
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
+    url(img/KHindex_web.webp);
+    height: 150vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
