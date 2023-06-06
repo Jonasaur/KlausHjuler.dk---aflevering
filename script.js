@@ -92,9 +92,12 @@ for (i2 = 0; i2 < coll2.length; i2++) {
         this.classList.toggle("active")
         let content = this.nextElementSibling
         if (content.style.display === "block") {
+            document.getElementById("extramargin1").style.marginBottom = "10vw"
             content.style.display = "none"
         } else {
             content.style.display = "block"
+            document.getElementById("extramargin1").style.marginBottom = "0"
+            document.getElementById("extramargin2").style.marginBottom = "10vw"
         }
     })   
 }
