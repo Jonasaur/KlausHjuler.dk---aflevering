@@ -10,22 +10,48 @@ function menuToggle() {
     }
 }
 
-// Collapsible
+// Collapsible med hjælp fra W3 schools
 
-let coll = document.getElementsByClassName("collapsible")
-let i
+let coll = document.getElementsByClassName("collapsible");
+let i;
+
+function mobileCollapsible() {
+
+    // definerer den næste class i html som "content"
+    for (i = 0; i < coll.length; i++) {
+        let content = coll[i].nextElementSibling;
+    
+    // første "if" tjekker om skærmen er over 768px bred og hvis den er  
+    // vises content ikke (bug-fix for resizing af vinduet). 
+
+    if (window.innerWidth > 768) {
+        content.style.display = "none";
+    } else {
+        if (coll[i].classList.contains("active")) {
+        content.style.display = "flex";
+        } else {
+            content.style.display = "none";
+            }
+        }
+    }
+}
+
+// når der klikkes på en collapsible kører funktionen mobileCollapsible()
+
+function onClick() {
+    this.classList.toggle("active");
+    mobileCollapsible();
+}
 
 for (i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function() {
-        this.classList.toggle("active")
-        let content = this.nextElementSibling
-        if (content.style.display === "flex") {
-            content.style.display = "none"
-        } else {
-            content.style.display = "flex"
-        }
-    })   
+    coll[i].addEventListener("click", onClick);
 }
+
+// kører funktionen igen hvis skærmbredden ændrer sig
+
+window.addEventListener("resize", mobileCollapsible);
+
+// gør plus til minus når der klikkes på en collapsible
 
 let plus1 = document.getElementById("plus1")
 let plus2 = document.getElementById("plus2")
