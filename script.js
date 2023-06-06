@@ -11,6 +11,8 @@ function menuToggle() {
 }
 
 // Collapsible med hjælp fra W3 schools
+// bugs er løst med hjælp fra chatGPT der hjalp med at tilføje en eventlistener der tjekker 
+// bredden på skærmvinduet og kører funktionen igen hvis den ændre sig over breakpoint
 
 let coll = document.getElementsByClassName("collapsible");
 let i;
@@ -82,7 +84,7 @@ function plus3Toggle() {
 }
 
 
-/** collapsible 2 til min historie side*/
+/** collapsible 2 til min historie side (også fra w3schools)*/
 
 let coll2 = document.getElementsByClassName("collapsible2")
 let i2
@@ -143,9 +145,11 @@ function plus8Toggle() {
     }
 }
 
-// funktion der skifter mellem baggrunde på workshop
+// funktion der skifter mellem baggrunde på workshop.
+// med hjælp fra stackoverflow.com, youtube og bugfixes af chatGPT
 
-
+// eventlistener fikser en bug hvor funktionen læste null i styles, ved at sørge for
+// at funktionen først køres når sidens content er indlæst
 document.addEventListener("DOMContentLoaded", function() {
     let BGIndex2 = 0;
     let wimages = [
@@ -164,7 +168,10 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         }
     }
+
+    //kører funktionen når siden læses
     changeBG2();
+    //skifter baggrund hvert 5000ms
     setInterval(changeBG2, 5000);
 });
 

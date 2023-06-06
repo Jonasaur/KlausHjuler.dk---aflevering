@@ -1,3 +1,10 @@
+/* CSS OPSÆTNING */
+
+/* stylingen er inddelt i undersider og står i den rækkefølge den optræder i HTML */
+
+/* stylingen er sat op så den generelle styling optræder først (mobile first)
+derefter følger media queries med ændringer til desktop-styling */
+
 
 /* gennemgående design styling */
 
@@ -76,9 +83,8 @@ footer {
     cursor: pointer;
 }
 
-/* navbar fra w3schools FIX DET SENERE!! */
+/* navbar med hjælp fra W3schools */
 
-/* Style the navigation menu */
 .topnavMobile {
     display: block;
     font-family: "fugaz one";
@@ -93,12 +99,10 @@ footer {
     margin: 0%;
 }
 
-  /* Hide the links inside the navigation menu (except for logo/home) */
 .topnavMobile #myLinks {
     display: none;
 }
 
-  /* Style navigation menu links */
 .topnavMobile a {
     color: white;
     padding: 3vw 4vw;
@@ -106,7 +110,6 @@ footer {
     display: block;
 }
 
-  /* Style the hamburger menu */
 .topnavMobile a.icon {
     background: #4c828e;
     width: 6vw;
@@ -119,11 +122,12 @@ footer {
     top: 0;
 }
 
-  /* Style the active link (or home/logo) */
 .active {
     background-color: rgb(212, 105, 61);
     color: white;
 }
+
+/* navigationsbar til desktop */
 
 .topnavDesk {
     height: 100%;
@@ -134,7 +138,6 @@ footer {
 
 .topnavDesk img {
     position: relative;
-    /* top: 1vw; */
     width: 30vw;
     margin-left: 2vw;
 }
@@ -158,6 +161,8 @@ footer {
     font-weight: 100;
     line-height: 120%;
 }
+
+/* The Passing Underline Link Hover Effect fra css-tricks.com */
 
 .hoverEffect {
     display: inline-block;
@@ -809,7 +814,7 @@ font-size: 3.5vw;
 
     #foredrag-heroText p {
         font-size: 1.5vw;
-        }
+    }
 
     .orangeContainer {
         top: 0;
@@ -1142,8 +1147,6 @@ font-size: 3.5vw;
 
 }
 
-
-
 /*STUNTMAN UNDERSIDE DESKTOP*/
 
 @media screen and (min-width: 768px) {
@@ -1227,7 +1230,6 @@ font-size: 3.5vw;
     }
 }
 
-
 /*FILMINSTRUKTØR UNDERSIDE */
 
 #filminstruktør-heroImage {
@@ -1295,6 +1297,8 @@ font-size: 3.5vw;
     height: auto;
     margin: 3%;
 }
+
+/* KONTAKT SIDE DESKTOP */
 
 @media screen and (min-width: 768px) {
     #kontakt-orangeContainer {
